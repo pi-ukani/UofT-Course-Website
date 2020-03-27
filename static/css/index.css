@@ -1,7 +1,7 @@
 html * {
   /* font-size: 1em !important; */
   /* color: #000 !important; */
-  font-family: Calibri !important;
+  font-family: 'Roboto', sans-serif;
 }
 
 html,
@@ -842,7 +842,7 @@ a:hover {
 footer {
   /* position: fixed; */
   background-color: black;
-  margin-top: 0;
+  margin-top: 3%;
   padding-top: 0;
   color: white;
   position: relative;
@@ -850,7 +850,7 @@ footer {
   overflow: hidden;
 }
 
-/* 
+/*
 .footer-title {
   border-right: solid 2px rgb(0, 204, 255);
 } */
