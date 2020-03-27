@@ -5,22 +5,25 @@
   <meta charset="utf-8">
   <title>CSCB20 | UTSC</title>
   <link rel="stylesheet" href="../static/css/index.css">
-  <link rel="stylesheet" href="../static/css/a3_pages.css">
+  <link rel="shortcut icon" href="../static/photos/UofT_tree_with_colours.png" type="image/x-icon">
 
+  <link rel="stylesheet" href="../static/css/a3_pages.css">
 </head>
 
 <body>
   <div class="main-nav" id="main-nav-id">
-    <a class="nav-title" href="index.html">CSCB20</a>
-    <a class="nav-buttn" href="latest-news.html">Latest News</a>
-    <a class="nav-buttn" href="assignments.html">Assignments</a>
+    <a class="nav-title" href="index">CSCB20</a>
+    <!-- <a class="nav-buttn" href="latest-news">Latest News</a>
+    <a class="nav-buttn" href="assignments">Assignments</a>
     <a class="nav-buttn" href="www.piazza.com">Piazza</a>
     <a class="nav-buttn" href="https://markus.utsc.utoronto.ca">Markus</a>
-    <a class="nav-buttn" href="feedback.html">Anon Feedback</a>
-    <a class="nav-buttn" href="syllabus.html">Syllabus</a>
-    <a class="nav-buttn" href="labs.html">Labs</a>
-    <a class="nav-buttn" href="course-team.html">Course Team</a>
-    <a class="nav-buttn" href="calender.html">calender</a>
+    <a class="nav-buttn" href="feedback">Feedback</a>
+    <a class="nav-buttn" href="syllabus">Syllabus</a>
+    <a class="nav-buttn" href="labs">Labs</a>
+    <a class="nav-buttn" href="course-team">Course Team</a>
+    <a class="nav-buttn" href="calender">Calender</a>
+    <a class="nav-buttn login_button" id="login_button" href="{{login_button}}">{{login_button}}</a> -->
+    <a class="nav-buttn login_button" id="login_button" href="signup">Register</a>
     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">
       <div class=" bar"></div>
       <div class="bar"></div>
@@ -43,32 +46,32 @@
 
 
   <div class="main-page">
-     <div class="title-pic">
-        <!-- Photo by Paweł Czerwiński on Unsplash -->
-        <h1 align="center" class="main-title">CSCB20 - Introduction to Databases and Web Applications</h1>
-        <h1 align="center" class="main-title">Winter 2020</h1>
-        <h3 align="center" class="main-title">Login to access grades, remarking service and feedback</h3>
-      </div>
+    <div class="title-pic">
+      <!-- Photo by Paweł Czerwiński on Unsplash -->
+      <h1 align="center" class="main-title">CSCB20 - Introduction to Databases and Web Applications</h1>
+      <h1 align="center" class="main-title">Winter 2020</h1>
+      <h3 align="center" class="main-title">Login to access grades, remarking service and feedback</h3>
+    </div>
     <div class="form_container">
       <div class="login form">
         <form action="/login" method="post">
           <h2>-:UTOR ID:-</h2>
           <input type="text" name="utorid">
-          
+
           <h2>-:Password:-</h2>
           <input type="password" name="password">
-          
-          
+
+
           <button type="submit">Login</button>
-          <a class="signup" href="signup"><button>Register</button></a>
+          <button type="button" onclick="location.href='signup'">Register</button>
         </form>
-        
+
         {% if login == "failed" %}
         <h2 id="incorrect-login">Incorrect Username OR Password</h2>
         {% endif %}
       </div>
     </div>
-  
+
   </div>
 
   <footer>

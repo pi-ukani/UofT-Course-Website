@@ -2,6 +2,8 @@
     margin: 50px auto;
 }
 
+
+
 .login {
     width: 47%;
     padding: 1%;
@@ -12,6 +14,7 @@
     text-align: center;
     height: fit-content;
     padding: 10px;
+    margin: auto;
 }
 
 button {
@@ -64,4 +67,9 @@ form button {
 
 .signup {
     text-decoration: none;
+}
+
+
+#signup_b {
+    float: right;
 }
