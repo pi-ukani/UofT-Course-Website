@@ -677,7 +677,7 @@ body {
 }
 
 .title-pic {
-  background-image: url('title.jpg');
+  background-image: url('../photos/title.jpg');
   /*Photo by Paweł Czerwiński on Unsplash */
   background-size: cover;
   margin: 5px;
