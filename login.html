@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>CSCB20 | UTSC</title>
   <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="others.css">
 
 </head>
 
@@ -28,11 +29,37 @@
   </div>
 
 
+  <script>
+    function myFunction() {
+      var x = document.getElementById("main-nav-id");
+      if (x.className === "main-nav") {
+        x.className += " responsive";
+      } else {
+        x.className = "main-nav";
+      }
+    }
+  </script>
 
-  <div class="main-calender-page">
-    <iframe
-      src="https://calendar.google.com/calendar/embed?src=g1b8rprf5c193r7atnoub5l2ik%40group.calendar.google.com&ctz=America%2FToronto"
-      style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+
+  <div class="main-page">
+    <div class="form_container">
+      <div class="login form">
+        <form action="/login" method="post">
+          <h3>UTOR ID:</h3>
+          <input type="text" name="utorid">
+          <br>
+          <h3>Password:</h3>
+          <input type="password" name="password">
+          <br>
+          <button type="submit">Login</button>
+        </form>
+        <a href="signup"><button>Sign Up!</button></a>
+        {% if login == "failed" %}
+        <h3 id="incorrect-login">Incorrect Username OR Password</h3>
+        {% endif %}
+      </div>
+    </div>
   </div>
 
   <footer>
