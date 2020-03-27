@@ -46,15 +46,17 @@
     <div class="form_container">
       <div class="login form">
         <form action="/login" method="post">
-          <h3>UTOR ID:</h3>
+          <h3>-:UTOR ID:-</h3>
           <input type="text" name="utorid">
-          <br>
-          <h3>Password:</h3>
+          </br>
+          <h3>-:Password:-</h3>
           <input type="password" name="password">
-          <br>
+          </br>
+          </br>
           <button type="submit">Login</button>
+          <a class="signup" href="signup"><button>Register</button></a>
         </form>
-        <a href="signup"><button>Sign Up!</button></a>
+        </br>
         {% if login == "failed" %}
         <h3 id="incorrect-login">Incorrect Username OR Password</h3>
         {% endif %}
