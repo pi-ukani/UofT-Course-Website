@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>CSCB20 | UTSC</title>
+  <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+  <div class="main-nav" id="main-nav-id">
+    <a class="nav-title" href="index.html">CSCB20</a>
+    <a class="nav-buttn" href="latest-news.html">Latest News</a>
+    <a class="nav-buttn" href="assignments.html">Assignments</a>
+    <a class="nav-buttn" href="www.piazza.com">Piazza</a>
+    <a class="nav-buttn" href="https://markus.utsc.utoronto.ca">Markus</a>
+    <a class="nav-buttn" href="feedback.html">Anon Feedback</a>
+    <a class="nav-buttn" href="syllabus.html">Syllabus</a>
+    <a class="nav-buttn" href="labs.html">Labs</a>
+    <a class="nav-buttn" href="course-team.html">Course Team</a>
+    <a class="nav-buttn" href="calender.html">calender</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">
+      <div class=" bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </a>
+  </div>
+
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("main-nav-id");
+      if (x.className === "main-nav") {
+        x.className += " responsive";
+      } else {
+        x.className = "main-nav";
+      }
+    }
+  </script>
+
+
+
+  <div class="main-page">
+   <h1><strong>Dashboard</strong></h1>
+         <h3>Welcome {{name}}!</h3>
+       </div>
+    </div>
+
+    <div class="container-2">
+      <div class="template">
+        <h1>Your Marks</h1>
+        <ul>
+          {% for assignment in data %}
+            <li><strong>{{ assignment[0] }}</strong>: {{assignment[1]}}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="template">
+        <h1>Remark Request</h1>
+        <form action="/remark" method="post">
+          Assignment:
+          <select name="assignment">
+            {% for assignment in data %}
+              <option>{{ assignment[0] }}</option>
+            {% endfor %}
+          </select>
+          <br>
+          Reason:
+          <br>
+          <textarea placeholder="What's your reason?" name="reasons"></textarea>
+          <br>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-nav">
+      <div class="footer-title">
+        <h1>CSCB20</h1>
+        <h1>Introduction to Databases and Web Applications</h1>
+        <a class="comp" href="https://www.utsc.utoronto.ca/cms/computer-science-1">Department of Computer Science at
+          UofT</a>
+      </div>
+      <div class="footer-section">
+        <h3>Course Content</h3>
+        <ul>
+          <li><a href="#">Latest News</a></li>
+          <li><a href="#">Assignments</a></li>
+          <li><a href="#">Labs</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="#">Syllabus</a></li>
+          <li><a href="#">Piazza</a></li>
+          <li><a href="#">Markus</a></li>
+        </ul>
+      </div>
+      <div class="footer-section last-footer-section">
+        <h3>Contact Us</h3>
+        <ul>
+          <li><a href="course-team.html">Course Team</a></li>
+          <li><a href="#">Anon Feedback</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>By Sheeza Aziz and Piyush Ukni</p>
+      <p>CSCB20H3 Winter 2020</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
