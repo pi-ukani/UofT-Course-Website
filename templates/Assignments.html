@@ -15,7 +15,7 @@
     <a class="nav-title" href="index">CSCB20</a>
     <a class="nav-buttn" href="latest-news">Latest News</a>
     <a class="nav-buttn" href="assignments">Assignments</a>
-    <a class="nav-buttn" href="www.piazza.com">Piazza</a>
+    <a class="nav-buttn" href="https://www.piazza.com">Piazza</a>
     <a class="nav-buttn" href="https://markus.utsc.utoronto.ca">Markus</a>
     <a class="nav-buttn"href="feedback">Feedback</a>
     <a class="nav-buttn" href="syllabus">Syllabus</a>
@@ -23,14 +23,23 @@
     <a class="nav-buttn" href="course-team">Course Team</a>
     <a class="nav-buttn" href="calender">Calender</a>
     <a class="nav-buttn login_button" id="login_button" href="{{login_button}}">{{login_button}}</a>
-    <!-- <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">
       <div class=" bar"></div>
       <div class="bar"></div>
       <div class="bar"></div>
-    </a> -->
+    </a>
   </div>
 
-
+<script>
+    function myFunction() {
+      var x = document.getElementById("main-nav-id");
+      if (x.className === "main-nav") {
+        x.className += " responsive";
+      } else {
+        x.className = "main-nav";
+      }
+    }
+  </script>
 
   <div class="main-assign-page">
     <div class="assign-title">

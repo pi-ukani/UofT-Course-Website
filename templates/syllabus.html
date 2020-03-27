@@ -15,7 +15,7 @@
     <a class="nav-title" href="index">CSCB20</a>
     <a class="nav-buttn" href="latest-news">Latest News</a>
     <a class="nav-buttn" href="assignments">Assignments</a>
-    <a class="nav-buttn" href="www.piazza.com">Piazza</a>
+    <a class="nav-buttn" href="https://www.piazza.com">Piazza</a>
     <a class="nav-buttn" href="https://markus.utsc.utoronto.ca">Markus</a>
     <a class="nav-buttn"href="feedback">Feedback</a>
     <a class="nav-buttn" href="syllabus">Syllabus</a>
@@ -30,6 +30,16 @@
     </a>
   </div>
 
+<script>
+    function myFunction() {
+      var x = document.getElementById("main-nav-id");
+      if (x.className === "main-nav") {
+        x.className += " responsive";
+      } else {
+        x.className = "main-nav";
+      }
+    }
+  </script>
 
 
   <div class="page-container">

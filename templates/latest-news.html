@@ -8,6 +8,35 @@
 
   </head>
   <body>
+   <div class="main-nav" id="main-nav-id">
+    <a class="nav-title" href="index">CSCB20</a>
+    <a class="nav-buttn" href="latest-news">Latest News</a>
+    <a class="nav-buttn" href="assignments">Assignments</a>
+    <a class="nav-buttn" href="https://www.piazza.com">Piazza</a>
+    <a class="nav-buttn" href="https://markus.utsc.utoronto.ca">Markus</a>
+    <a class="nav-buttn"href="feedback">Feedback</a>
+    <a class="nav-buttn" href="syllabus">Syllabus</a>
+    <a class="nav-buttn" href="labs">Labs</a>
+    <a class="nav-buttn" href="course-team">Course Team</a>
+    <a class="nav-buttn" href="calender">Calender</a>
+    <a class="nav-buttn login_button" id="login_button" href="{{login_button}}">{{login_button}}</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">
+      <div class=" bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </a>
+  </div>
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("main-nav-id");
+      if (x.className === "main-nav") {
+        x.className += " responsive";
+      } else {
+        x.className = "main-nav";
+      }
+    }
+  </script>
     <div class="page-container">
     <h1 id="latest-news-page-title">Latest Course News</h1>
     <div class="news-item">
@@ -53,4 +82,41 @@
   </div>
 
   </body>
+  <footer>
+    <div class="footer-nav">
+      <div class="footer-title">
+        <h1>CSCB20</h1>
+        <h1>Introduction to Databases and Web Applications</h1>
+        <a class="comp" href="https://www.utsc.utoronto.ca/cms/computer-science-1">Department of Computer Science at
+          UofT</a>
+      </div>
+      <div class="footer-section">
+        <h2>Course Content</h2>
+        <ul>
+          <li><a href="#">Latest News</a></li>
+          <li><a href="#">Assignments</a></li>
+          <li><a href="#">Labs</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h2>Resources</h2>
+        <ul>
+          <li><a href="#">Syllabus</a></li>
+          <li><a href="#">Piazza</a></li>
+          <li><a href="#">Markus</a></li>
+        </ul>
+      </div>
+      <div class="footer-section last-footer-section">
+        <h2>Contact Us</h2>
+        <ul>
+          <li><a href="course-team.html">Course Team</a></li>
+          <li><a href="#">Anon Feedback</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>By Sheeza Aziz and Piyush Ukni</p>
+      <p>CSCB20h2 Winter 2020</p>
+    </div>
+  </footer>
 </html>

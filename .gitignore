@@ -1,1 +1,5 @@
 bak/
+app.py
+assignment3.db
+venv/
+__pycache__/
