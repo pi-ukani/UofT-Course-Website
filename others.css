@@ -1,5 +1,5 @@
 .form_container {
-    margin: auto;
+    margin: 50px auto;
 }
 
 .login {
@@ -7,10 +7,12 @@
     padding: 1%;
     background-color: white;
     min-width: 400px;
-    border: solid 1px;
-    box-shadow: 1px 2px #888888;
+    border: solid 0.5px;
+    box-shadow: 2px 2px #0086ea;
+    border-radius: 5px;
     text-align: center;
     height: fit-content;
+    padding: 10px;
 }
 
 button {
@@ -23,15 +25,42 @@ button {
     text-decoration: none;
     display: inline-block;
     border-radius: 5px;
+    font-size: 2vw;
 }
 
 form {
     display: block;
     margin-top: 0em;
+
+}
+
+form input {
+    width: 100%;
+    box-shadow: 1px 2px #0086ea;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+select {
+    width: 100%;
+    box-shadow: 1px 2px #0086ea;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    text-align-last: center;
+    padding-right: 29px;
+    direction: rtl;
 }
 
 form button {
-    display: inline;
+    width: 100%;
 }
 
 .signup {

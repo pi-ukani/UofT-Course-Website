@@ -47,25 +47,29 @@
         <!-- Photo by Paweł Czerwiński on Unsplash -->
         <h1 align="center" class="main-title">CSCB20 - Introduction to Databases and Web Applications</h1>
         <h1 align="center" class="main-title">Winter 2020</h1>
-        <h3 align="center" class="main-title">Login to access grades, remarking service and feedback</h3>
+        <h3 align="center" class="main-title">Register to access grades, remarking service and feedback</h3>
       </div>
     <div class="form_container">
       <div class="login form">
-        <form action="/login" method="post">
+        <form action="/signup" method="post">
+        
+          <h2>-:Account Type:-</h2>
+          <select name="user_type">
+            <option>Student</option>
+            <option>Instructor</option>
+          </select>
+          
+          <h2>-:Full Name:-</h2>
+          <input type="text" name="name">
+          
           <h2>-:UTOR ID:-</h2>
           <input type="text" name="utorid">
           
           <h2>-:Password:-</h2>
           <input type="password" name="password">
           
-          
-          <button type="submit">Login</button>
-          <a class="signup" href="signup"><button>Register</button></a>
+          <button type="submit">Submit</button>
         </form>
-        
-        {% if login == "failed" %}
-        <h2 id="incorrect-login">Incorrect Username OR Password</h2>
-        {% endif %}
       </div>
     </div>
   
