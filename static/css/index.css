@@ -817,11 +817,14 @@ a:hover {
 }
 
 /* course description */
-.course-des-title {
+/* .course-des-title {
   text-align: center;
 }
 
 .course-des {
+  text-align: center;
+} */
+.course-info {
   text-align: center;
 }
 
@@ -842,11 +845,11 @@ a:hover {
 footer {
   /* position: fixed; */
   background-color: black;
-  margin-top: 3%;
+  margin-top: 5%;
   padding-top: 0;
   color: white;
   position: relative;
-  margin-bottom: -10px;
+  /* margin-bottom: -10%; */
   overflow: hidden;
 }
 
@@ -1072,7 +1075,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 300px)and (max-width: 1024px) {
+@media screen and (min-width: 300px) and (max-width: 1024px) {
 
   .footer-title a {
 
