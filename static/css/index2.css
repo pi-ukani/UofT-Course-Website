@@ -9,6 +9,13 @@ html, body {
 h1, h2, h3 {
   font-weight: normal;
 }
+a {
+  color: rgb(31, 97, 141);
+}
+a:hover {
+  color: rgb(52, 152, 219);
+  transition: 0.4s;
+}
 .spacer {
   width: 100%;
   height: 10%;
@@ -119,6 +126,8 @@ h1, h2, h3 {
 footer {
   background-color: rgb(43, 44, 49);
   color: #f2f2f2;
+  margin-top: -3%;
+  padding-top: 1%;
 }
 .footer-title h1 {
   margin-top: 1%;
@@ -184,19 +193,37 @@ footer {
 /* HOMEPAGE */
 .main-page {
   display: flex;
-  /* background-color: rgb(244, 246, 247); */
+  width: 95%;
+  margin: auto;
+}
+.main-title {
+  font-style: italic;
+  font-weight: 300;
+}
+.main-title-sem {
+  font-style: italic;
+  font-weight: 100;
+}
+#main-hr {
+  width: 85%;
 }
 .latest-news-scroll {
-  border: 2px solid black;
+  border: 1px solid black;
   padding: 10px;
   height: 25%;
   overflow: hidden;
   overflow-y: scroll;
-  margin: auto 2%;
+  margin-right: 4%;
+  background-color: rgb(234, 242, 248);
 }
-.notes-title {
-  margin: 1% 2%;
+.news-item h2 {
+  margin-bottom: 0.5%;
 }
+/* .news-item-date {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+} */
 .main-leftside {
   flex: 3;
 }
@@ -206,8 +233,38 @@ footer {
   flex-direction: column;
 }
 .main-page-box {
-  border: 2px solid black;
+  background-color: rgb(169, 223, 191);
+  box-shadow: 1px 4px 8px 1px rgba(0,0,0,0.2);
+  transition: 1s;
   padding: 10px;
-  border-radius: 50px 2px;
+  /* border-radius: 50px 2px; */
   margin-bottom: 20px;
+}
+.main-page-box-even {
+  background-color: rgb(208, 236, 231);
+  box-shadow: 1px 4px 8px 1px rgba(0,0,0,0.2);
+  padding: 10px;
+  /* border-radius: 2px 50px; */
+  margin-bottom: 20px;
+}
+/* for mobile */
+/* for iPad */
+@media only screen and (max-width: 1100px) {
+  .main-page {
+    top: 0;
+    padding-top: 20px;
+    display: table;
+    margin-top: 30px;
+  }
+  #main-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-page-box-first {
+    margin-top: 2%;
+  }
+  .main-page-box-last {
+    margin-bottom: 6%;
+  }
+
 }
