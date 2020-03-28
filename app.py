@@ -1,32 +1,34 @@
 from flask import Flask, request, render_template, url_for, escape, session, redirect
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.sql import text
+import logging
 
 app = Flask(__name__)
 app.secret_key = "this_is_a_secret_dont_reveal"
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///assignment3.db"
 app.config["SQLALCHEMY_ECHO"] = True
 db = SQLAlchemy(app)
+logging.basicConfig(filename='demo.log', level=logging.DEBUG)
 
 if __name__ == "__main__":
     app.run(debug=True, host="127.0.0.1")
 
 
 def logged_in():
-    return "utorid" in session
+    return "username" in session
 
 
 @app.route("/")
 def index():
     if not logged_in():
         return redirect(url_for("Login"))
-    return render_template(url_for("yourinfo"), login_button="Logout")
+    return redirect(url_for("yourinfo"))
 
 
 @app.route("/Logout")
 @app.route("/logout")
 def Logout():
-    session.pop("utorid", None)
+    session.pop("username", None)
     return redirect(url_for("Login"))
 
 
@@ -84,8 +86,8 @@ def remark():
     if not logged_in():
         return redirect(url_for("Login"))
 
-    sql = "SELECT user_type FROM users WHERE utorid='{}'".format(
-        session["utorid"])
+    sql = "SELECT user_type FROM users WHERE username='{}'".format(
+        session["username"])
     query_results = db.engine.execute(text(sql))
     user_type = ""
     for result in query_results:
@@ -93,13 +95,13 @@ def remark():
 
     if request.method == "POST":
         if user_type == "student":
-            utorid = session["utorid"]
+            username = session["username"]
 
             assignment = request.form["assignment"]
 
             reasons = request.form["reasons"]
             sql = "INSERT INTO remarks VALUES ('{}', '{}', '{}')".format(
-                utorid, assignment, reasons
+                username, assignment, reasons
             )
             db.engine.execute(text(sql).execution_options(autocommit=True))
             return redirect(url_for("yourinfo"))
@@ -109,14 +111,14 @@ def remark():
             remark_requests = data["remarks"]
 
             for remark_request in remark_requests:
-                utorid = remark_request["utorid"]
+                username = remark_request["username"]
                 sql = "UPDATE marks SET "
                 for assignment in remark_request["marks"]:
                     sql += (
                         assignment + " = " +
                         remark_request["marks"][assignment] + ", "
                     )
-                sql = sql[:-2] + " WHERE utorid='{}'".format(utorid)
+                sql = sql[:-2] + " WHERE username='{}'".format(username)
                 db.engine.execute(text(sql).execution_options(autocommit=True))
 
             return redirect(url_for("yourinfo"))
@@ -126,9 +128,8 @@ def remark():
 def yourinfo():
     if not logged_in():
         return redirect(url_for("Login"))
-
-    sql = "SELECT user_type FROM users WHERE utorid='{}'".format(
-        session["utorid"])
+    sql = "SELECT user_type FROM users WHERE username='{}'".format(
+        session["username"])
     query_results = db.engine.execute(text(sql))
 
     user_type = ""
@@ -137,7 +138,8 @@ def yourinfo():
 
     if user_type == "student":
 
-        sql = "SELECT * FROM marks WHERE utorid='{}'".format(session["utorid"])
+        sql = "SELECT * FROM marks WHERE username='{}'".format(
+            session["username"])
         query_results = db.engine.execute(text(sql))
         marks_column = list(query_results.keys())
         marks = []
@@ -145,11 +147,11 @@ def yourinfo():
             marks = result
         result_marks = []
         for i in range(len(marks_column)):
-            if marks_column[i] != "utorid":
+            if marks_column[i] != "username":
                 result_marks.append((marks_column[i], marks[i]))
 
-        sql = "SELECT name FROM users WHERE utorid='{}'".format(
-            session["utorid"])
+        sql = "SELECT name FROM users WHERE username='{}'".format(
+            session["username"])
         query_results = db.engine.execute(text(sql))
 
         for result in query_results:
@@ -167,8 +169,8 @@ def yourinfo():
             for result in query_results:
                 all_marks.append(result)
 
-            sql = "SELECT name FROM users WHERE utorid='{}'".format(
-                session["utorid"])
+            sql = "SELECT name FROM users WHERE username='{}'".format(
+                session["username"])
             query_results = db.engine.execute(text(sql))
 
             for result in query_results:
@@ -195,8 +197,8 @@ def feedback():
     if not logged_in():
         return redirect(url_for("Login"))
 
-    sql = "SELECT user_type FROM users WHERE utorid='{}'".format(
-        session["utorid"])
+    sql = "SELECT user_type FROM users WHERE username='{}'".format(
+        session["username"])
     query_results = db.engine.execute(text(sql))
     user_type = ""
     for result in query_results:
@@ -204,16 +206,16 @@ def feedback():
 
     if user_type == "student":
         if request.method == "GET":
-            sql = "SELECT name, utorid FROM users WHERE user_type='instructor'"
+            sql = "SELECT name, username FROM users WHERE user_type='instructor'"
             query_results = db.engine.execute(text(sql))
             instructors = []
             for result in query_results:
-                instructors.append((result["name"], result["utorid"]))
+                instructors.append((result["name"], result["username"]))
 
             return render_template("feedback_to_instructor.html", data=instructors,  login_button="Logout")
 
         elif request.method == "POST":
-            student_id = session["utorid"]
+            student_id = session["username"]
             instructor_id = request.form["instructor_id"]
             feedback = request.form["feedback"]
             sql = "INSERT INTO feedback VALUES ('{}', '{}', '{}')".format(
@@ -224,7 +226,7 @@ def feedback():
 
     elif user_type == "instructor":
         sql = "SELECT * FROM feedback WHERE instructor_id='{}'".format(
-            session["utorid"]
+            session["username"]
         )
         query_results = db.engine.execute(text(sql))
         feedback = []
@@ -242,10 +244,10 @@ def Login():
         sql = "SELECT * FROM users"
         query_results = db.engine.execute(text(sql))
         for result in query_results:
-            if result["utorid"] == request.form["utorid"]:
+            if result["username"] == request.form["username"]:
                 if result["password"] == request.form["password"]:
 
-                    session["utorid"] = request.form["utorid"]
+                    session["username"] = request.form["username"]
                     return redirect(url_for("yourinfo"))
 
         return render_template("login.html", login="failed", login_button="Login")
@@ -258,17 +260,17 @@ def Login():
 def signup():
     if request.method == "POST":
 
-        utorid = request.form["utorid"]
+        username = request.form["username"]
         name = request.form["name"]
         password = request.form["password"]
         type = request.form["user_type"].lower()
         sql = "INSERT INTO users VALUES ('{}', '{}', '{}', '{}')".format(
-            utorid, name, password, type
+            username, name, password, type
         )
         db.engine.execute(text(sql).execution_options(autocommit=True))
         if type == "student":
             sql = "INSERT INTO marks VALUES ('{}', NULL, NULL, NULL, NULL, NULL)".format(
-                utorid
+                username
             )
             db.engine.execute(text(sql).execution_options(autocommit=True))
 

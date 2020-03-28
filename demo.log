@@ -1,0 +1,93 @@
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2020 22:33:18] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2020 22:33:18] "[37mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2020 22:33:18] "[37mGET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2020 22:33:18] "[37mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2020 22:33:19] "[37mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2020 22:33:19] "[37mGET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2020 22:33:19] "[37mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:sqlalchemy.engine.base.Engine:SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT user_type FROM users WHERE username='ukanipiy'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT * FROM marks WHERE username='ukanipiy'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT name FROM users WHERE username='ukanipiy'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2020 22:33:25] "[37mGET /yourinfo HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2020 22:33:52] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2020 22:33:52] "[37mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2020 22:33:52] "[37mGET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2020 22:33:52] "[37mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2020 22:33:52] "[37mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2020 22:33:52] "[37mGET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2020 22:41:52] "[35m[1mGET /?__debugger__=yes&tb=140400902918272&cmd=paste&s=DpfcKb7Hqg3DMuLDw3dM HTTP/1.1[0m" 500 -
+ERROR:werkzeug:Error on request:
+Traceback (most recent call last):
+  File "/mnt/c/Users/ukani/OneDrive - University of Toronto/Winter courses 2020/B20/A3 Due April 3/Parnter's code/CSCB20-A3/venv/lib/python3.6/site-packages/werkzeug/serving.py", line 323, in run_wsgi
+    execute(self.server.app)
+  File "/mnt/c/Users/ukani/OneDrive - University of Toronto/Winter courses 2020/B20/A3 Due April 3/Parnter's code/CSCB20-A3/venv/lib/python3.6/site-packages/werkzeug/serving.py", line 312, in execute
+    application_iter = app(environ, start_response)
+  File "/mnt/c/Users/ukani/OneDrive - University of Toronto/Winter courses 2020/B20/A3 Due April 3/Parnter's code/CSCB20-A3/venv/lib/python3.6/site-packages/werkzeug/debug/__init__.py", line 479, in __call__
+    response = self.paste_traceback(request, traceback)
+  File "/mnt/c/Users/ukani/OneDrive - University of Toronto/Winter courses 2020/B20/A3 Due April 3/Parnter's code/CSCB20-A3/venv/lib/python3.6/site-packages/werkzeug/debug/__init__.py", line 370, in paste_traceback
+    rv = traceback.paste()
+  File "/mnt/c/Users/ukani/OneDrive - University of Toronto/Winter courses 2020/B20/A3 Due April 3/Parnter's code/CSCB20-A3/venv/lib/python3.6/site-packages/werkzeug/debug/tbtools.py", line 299, in paste
+    rv = urlopen("https://api.github.com/gists", data=data)
+  File "/usr/lib/python3.6/urllib/request.py", line 223, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.6/urllib/request.py", line 532, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.6/urllib/request.py", line 642, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/usr/lib/python3.6/urllib/request.py", line 570, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.6/urllib/request.py", line 504, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.6/urllib/request.py", line 650, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 401: Unauthorized
+INFO:werkzeug: * Detected change in "/mnt/c/Users/ukani/OneDrive - University of Toronto/Winter courses 2020/B20/A3 Due April 3/Parnter's code/CSCB20-A3/app.py", reloading
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2020 22:44:44] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:sqlalchemy.engine.base.Engine:SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT user_type FROM users WHERE username='ukanipiy'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT * FROM marks WHERE username='ukanipiy'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT name FROM users WHERE username='ukanipiy'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2020 22:44:44] "[37mGET /yourinfo HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2020 22:45:56] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:sqlalchemy.engine.base.Engine:SELECT user_type FROM users WHERE username='ukanipiy'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT * FROM marks WHERE username='ukanipiy'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT name FROM users WHERE username='ukanipiy'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2020 22:45:56] "[37mGET /yourinfo HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in "/mnt/c/Users/ukani/OneDrive - University of Toronto/Winter courses 2020/B20/A3 Due April 3/Parnter's code/CSCB20-A3/app.py", reloading
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2020 23:08:10] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:sqlalchemy.engine.base.Engine:SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT user_type FROM users WHERE username='ukanipiy'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT * FROM marks WHERE username='ukanipiy'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT name FROM users WHERE username='ukanipiy'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2020 23:08:10] "[37mGET /yourinfo HTTP/1.1[0m" 200 -
+INFO:sqlalchemy.engine.base.Engine:SELECT user_type FROM users WHERE username='ukanipiy'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT * FROM marks WHERE username='ukanipiy'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT name FROM users WHERE username='ukanipiy'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2020 23:08:17] "[37mGET /yourinfo HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2020 23:08:17] "[37mGET /static/css/index.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Mar/2020 23:08:17] "[37mGET /static/photos/UofT_tree_with_colours.png HTTP/1.1[0m" 200 -
