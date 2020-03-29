@@ -5,21 +5,24 @@
   <meta charset="utf-8">
   <title>CSCB20 | UTSC</title>
   <link rel="stylesheet" href="../static/css/index.css">
+  <link rel="shortcut icon" href="../static/photos/UofT_tree_with_colours.png" type="image/x-icon">
+
 
 </head>
 
 <body>
   <div class="main-nav" id="main-nav-id">
-    <a class="nav-title" href="index.html">CSCB20</a>
-    <a class="nav-buttn" href="latest-news.html">Latest News</a>
-    <a class="nav-buttn" href="assignments.html">Assignments</a>
-    <a class="nav-buttn" href="www.piazza.com">Piazza</a>
+    <a class="nav-title" href="index">CSCB20</a>
+    <a class="nav-buttn" href="yourinfo">Dashboard</a></a>
+    <a class="nav-buttn" href="assignments">Assignments</a>
+    <a class="nav-buttn" href="https://www.piazza.com">Piazza</a>
     <a class="nav-buttn" href="https://markus.utsc.utoronto.ca">Markus</a>
-    <a class="nav-buttn" href="feedback.html">Anon Feedback</a>
-    <a class="nav-buttn" href="syllabus.html">Syllabus</a>
-    <a class="nav-buttn" href="labs.html">Labs</a>
-    <a class="nav-buttn" href="course-team.html">Course Team</a>
-    <a class="nav-buttn" href="calender.html">calender</a>
+    <a class="nav-buttn"href="feedback">Feedback</a>
+    <a class="nav-buttn" href="syllabus">Syllabus</a>
+    <a class="nav-buttn" href="labs">Labs</a>
+    <a class="nav-buttn" href="course-team">Course Team</a>
+    <a class="nav-buttn" href="calender">Calender</a>
+    <a class="nav-buttn login_button" href="{{login_button}}">{{login_button}}</a>
     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">
       <div class=" bar"></div>
       <div class="bar"></div>
@@ -30,19 +33,19 @@
 
   <script>
     function myFunction() {
-      var x = document.getElementById("main-nav-id");
-      if (x.className === "main-nav") {
-        x.className += " responsive";
-      } else {
-        x.className = "main-nav";
-      }
-    }
-  </script>
+        var x = document.getElementById("main-nav-id");
+        if (x.className === "main-nav") {
+            x.className += " responsive";
+        } else {
+            x.className = "main-nav";
+        }
+    } 
+    </script>
 
 
 
   <div class="main-page">
-   <h1><strong>Dashboard</strong></h1>
+   <h1><strong>Dashboard!</strong></h1>
          <h3>Welcome {{name}}!</h3>
        </div>
     </div>

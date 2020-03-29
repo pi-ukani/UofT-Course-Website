@@ -12,12 +12,9 @@ body {
   height: 100%;
 }
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  height: 100%;
+.nav-buttn.login_button {
+  background-color: seagreen;
+  float: right;
 }
 
 .page-container {
@@ -759,6 +756,12 @@ a:hover {
 
 }
 
+/* iFrame */
+iframe {
+  border: 0;
+  margin: 250px 300px;
+}
+
 /* main page layout set up */
 .main-page {
   background-color: white;
@@ -1186,7 +1189,7 @@ footer {
   }
 
   .main-nav.responsive {
-    position: absolute;
+    position: fixed;
   }
 
   .main-nav.responsive .icon {
@@ -1215,4 +1218,9 @@ footer {
     width: 100%;
     text-align: left;
   }
+<<<<<<< HEAD
 }
+=======
+
+}
+>>>>>>> 8cc7570df4fa83160602de5f7ad1e46ffddb0c97
