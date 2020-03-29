@@ -372,3 +372,33 @@ footer {
     width: 20%;
   }
 }
+/* LABS END */
+
+/* SYLLABUS */
+.syllabus {
+  display: flex;
+}
+.syllabus-leftside, .syllabus-rightside {
+  flex: 1;
+  border: 1px solid black;
+}
+.syllabus-info, .syllabus-policy {
+  border: 1px solid black;
+}
+.syllabus-policy .professor-cards {
+  display: flex;
+  border: 1px solid black;
+  margin: auto 1%;
+  text-align: center;
+}
+.syllabus-policy .professor-cards .card {
+  flex: 1;
+  border: 1px solid black;
+}
+.syllabus-policy .unavailable-img, .syllabus-policy .anna-img {
+  width: 100%;
+  height: 50%;
+}
+.syllabus-policy .professor-cards .card {
+  margin: 0% 2%;
+}
