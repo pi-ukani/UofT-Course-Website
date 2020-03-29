@@ -297,3 +297,29 @@ footer {
   border-radius: 10px;
 }
 /* LATEST NEWS END */
+
+
+/* ANON FEEDBACK */
+.feedback-page-email input, .feedback-page-feedback textarea {
+  font-size: 1rem;
+  padding: 0.75%;
+  background-color: white;
+  border: none;
+}
+.feedback-page-email input:focus, .feedback-page-feedback textarea:focus {
+  outline: none;
+  border: 1px solid black;
+}
+.feedback-page-feedback textarea {
+  margin-top: 1%;
+}
+#feedback-submit {
+  font-size: 1rem;
+  padding: 0.8%;
+  background-color: rgb(52, 152, 219);
+  color: #f2f2f2;
+  margin: 1% auto;
+}
+#feedback-submit:hover {
+  background-color: rgb(31, 97, 141);
+}
