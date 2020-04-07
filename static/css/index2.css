@@ -377,6 +377,7 @@ footer {
 /* SYLLABUS */
 .syllabus {
   display: flex;
+  margin-bottom: 2%;
 }
 .syllabus-leftside, .syllabus-rightside {
   flex: 1;
@@ -384,16 +385,24 @@ footer {
 }
 .syllabus-info, .syllabus-policy {
   border: 1px solid black;
+  padding: 0% 1%;
+  /* box-shadow: 1px 4px 8px 1px rgba(0,0,0,0.2); */
+}
+.syllabus-info:hover, .syllabus-policy:hover {
+  box-shadow: 3px 8px 16px 3px rgba(0,0,0,0.2);
 }
 .syllabus-policy .professor-cards {
   display: flex;
-  border: 1px solid black;
   margin: auto 1%;
   text-align: center;
 }
 .syllabus-policy .professor-cards .card {
   flex: 1;
   border: 1px solid black;
+  box-shadow: 1px 4px 8px 1px rgba(0,0,0,0.2);
+}
+.syllabus-policy .professor-cards .card:hover {
+  box-shadow: 3px 8px 16px 3px rgba(0,0,0,0.2);
 }
 .syllabus-policy .unavailable-img, .syllabus-policy .anna-img {
   width: 100%;
