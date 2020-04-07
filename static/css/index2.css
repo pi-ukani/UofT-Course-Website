@@ -246,17 +246,19 @@ footer {
   flex-direction: column;
 }
 .main-page-box {
-  background-color: rgb(169, 223, 191);
   box-shadow: 1px 4px 8px 1px rgba(0,0,0,0.2);
-  transition: 1s;
   padding: 10px;
   margin-bottom: 20px;
+  transition: box-shadow 0.4s ease-in-out 0s;
+}
+.main-page-box-odd {
+  background-color: rgb(169, 223, 191);
 }
 .main-page-box-even {
   background-color: rgb(208, 236, 231);
-  box-shadow: 1px 4px 8px 1px rgba(0,0,0,0.2);
-  padding: 10px;
-  margin-bottom: 20px;
+}
+.main-page-box:hover, .main-page-box-even:hover {
+  box-shadow: 3px 12px 16px 3px rgba(0,0,0,0.2);
 }
 /* for mobile */
 /* for iPad */
@@ -436,7 +438,6 @@ footer {
   border: 1px solid black;
   box-shadow: 1px 4px 8px 1px rgba(0,0,0,0.2);
   transition: box-shadow 0.3s ease-in-out 0s;
-  /* background-color: ; */
 }
 .course-team .card:hover {
   box-shadow: 3px 12px 16px 3px rgba(0,0,0,0.2);
@@ -450,11 +451,6 @@ footer {
 }
 .course-team .card {
   margin-bottom: 2%;
-}
-/* for mobile */
-/* for iPad */
-@media only screen and (max-width: 999px) {
-
 }
 /* for desktop */
 @media only screen and (min-width: 1000px) {
@@ -474,3 +470,4 @@ footer {
     margin-left: 2%;
   }
 }
+/* COURSE TEAM END */
