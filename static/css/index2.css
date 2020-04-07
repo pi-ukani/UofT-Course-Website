@@ -374,6 +374,7 @@ footer {
 }
 /* LABS END */
 
+
 /* SYLLABUS */
 .syllabus {
   margin-bottom: 2%;
@@ -381,6 +382,20 @@ footer {
 .syllabus-info, .syllabus-policy {
   border-bottom: 1px solid black;
   padding: 0% 1%;
+}
+/* for mobile */
+/* for iPad */
+@media only screen and (max-width: 999px) {
+  .syllabus {
+    border: 1px solid black;
+  }
+  .syllabus-policy .professor-cards  {
+    text-align: center;
+  }
+  .syllabus-policy .unavailable-img, .syllabus-policy .anna-img {
+    width: 50%;
+    height: 10%;
+  }
 }
 /* for desktop */
 @media only screen and (min-width: 1000px) {
@@ -412,18 +427,30 @@ footer {
     margin: 0% 2%;
   }
 }
-/* for mobile */
-/* for iPad */
-@media only screen and (max-width: 999px) {
-  .syllabus {
-    border: 1px solid black;
-  }
-  .syllabus-policy .professor-cards  {
-    text-align: center;
-  }
-  .syllabus-policy .unavailable-img, .syllabus-policy .anna-img {
-    width: 50%;
-    height: 10%;
-  }
-}
 /* SYLLABUS END */
+
+
+/* COURSE TEAM */
+.course-team .card {
+  text-align: center;
+  border: 1px solid black;
+  width: 25%;
+}
+.course-team img {
+  width: 100%;
+  height: 50%;
+}
+.course-team .card-2 {
+  margin: 0% 2%;
+}
+.course-team .card {
+  margin-bottom: 2%;
+}
+.course-team .professor-cards, .course-team .ta-cards-1 {
+  display: flex;
+  justify-content: center;
+}
+.course-team .ta-cards-2 {
+  display: flex;
+  justify-content: space-around;
+}
