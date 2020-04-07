@@ -434,6 +434,12 @@ footer {
 .course-team .card {
   text-align: center;
   border: 1px solid black;
+  box-shadow: 1px 4px 8px 1px rgba(0,0,0,0.2);
+  transition: box-shadow 0.3s ease-in-out 0s;
+  /* background-color: ; */
+}
+.course-team .card:hover {
+  box-shadow: 3px 12px 16px 3px rgba(0,0,0,0.2);
 }
 .course-team img {
   width: 100%;
