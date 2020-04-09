@@ -476,12 +476,17 @@ footer {
 /* ASSIGNMENTS */
 .assn-row {
   margin-bottom: 5%;
+  display: flex;
 }
 .assn-box {
   border: 1px solid black;
+  margin-right: 10%;
   width: 25%;
   padding: 1%;
   margin-bottom: 2%;
+}
+.assn-box-last {
+  margin-right: 0%;
 }
 .assn-box .due-item-date {
   display: inline-block;
