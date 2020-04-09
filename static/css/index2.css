@@ -553,3 +553,11 @@ footer {
 .assn-box .assn-resources a:hover {
   background-color: rgb(52, 152, 219);
 }
+/* ASSIGNMENT END */
+
+
+/* CALENDAR */
+.calendar-container {
+  margin-bottom: 5%;
+}
+/* CALENDAR END */
