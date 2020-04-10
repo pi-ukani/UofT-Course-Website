@@ -4,16 +4,17 @@
 <head>
   <meta charset="utf-8">
   <title>CSCB20 | UTSC</title>
+<<<<<<< HEAD
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../static/css/the-actual-index.css">
-  <link rel="stylesheet" href="../static/css/homepage.css">
+  <!-- <link rel="stylesheet" href="../static/css/index.css"> -->
+  <link rel="stylesheet" href="../static/css/index2.css">
+  <!-- <link rel="stylesheet" href="../static/css/index3.css"> -->
 </head>
 
 <body>
   <div class="main-nav" id="main-nav-id">
     <a class="nav-title" href="index.html">CSCB20</a>
     <a class="nav-buttn" href="latest-news.html">Latest News</a>
-    <a class="nav-buttn" href="student-grades.html">My Dashboard</a>
     <a class="nav-buttn" href="assignments.html">Assignments</a>
     <a class="nav-buttn" href="https://piazza.com/">Piazza</a>
     <a class="nav-buttn" href="https://markus.utsc.utoronto.ca">Markus</a>
@@ -22,7 +23,25 @@
     <a class="nav-buttn" href="labs.html">Labs</a>
     <a class="nav-buttn" href="course-team.html">Course Team</a>
     <a class="nav-buttn" href="calender.html">Calender</a>
+=======
+  <link rel="stylesheet" href="../static/css/index.css">
+  <link rel="shortcut icon" href="../static/photos/UofT_tree_with_colours.png" type="image/x-icon">
+
+
+</head>
+ <div class="main-nav" id="main-nav-id">
+    <a class="nav-title" href="index">CSCB20</a>
+    <a class="nav-buttn" href="yourinfo">Dashboard</a>
+    <a class="nav-buttn" href="assignments">Assignments</a>
+    <a class="nav-buttn" href="https://www.piazza.com">Piazza</a>
+    <a class="nav-buttn" href="https://markus.utsc.utoronto.ca">Markus</a>
+    <a class="nav-buttn" href="feedback">Feedback</a>
+    <a class="nav-buttn" href="syllabus">Syllabus</a>
+    <a class="nav-buttn" href="labs">Labs</a>
+    <a class="nav-buttn" href="course-team">Course Team</a>
+    <a class="nav-buttn" href="calender">Calender</a>
     <a class="nav-buttn login_button" id="login_button" href="{{login_button}}">{{login_button}}</a>
+>>>>>>> 8cc7570df4fa83160602de5f7ad1e46ffddb0c97
      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">
       <div class="bar"></div>
       <div class="bar"></div>
@@ -31,6 +50,7 @@
   </div>
    <script>
     function myFunction() {
+<<<<<<< HEAD
       var x = document.getElementById("main-nav-id");
       if (x.className === "main-nav") {
         x.className += " responsive";
@@ -42,6 +62,20 @@
   <div class="spacer">
     &nbsp;
   </div>
+=======
+        var x = document.getElementById("main-nav-id");
+        if (x.className === "main-nav") {
+            x.className += " responsive";
+        } else {
+            x.className = "main-nav";
+        }
+    } 
+    </script>
+
+
+<body>
+ 
+>>>>>>> 8cc7570df4fa83160602de5f7ad1e46ffddb0c97
 
   <div class="main-page">
     <div class="main-leftside">
@@ -51,10 +85,14 @@
         <h1 align="center" class="main-title-sem">Winter 2020</h1>
         <hr id="main-hr">
       </div>
+<<<<<<< HEAD
 
 
 
       <h2 class="homepage-news-title">Latest News</h2>
+=======
+     <h2 class="notes-title"><a href="latest-news"> Latest News:-</a></h2>
+>>>>>>> 8cc7570df4fa83160602de5f7ad1e46ffddb0c97
       <div class="latest-news-scroll">
         <div class="news-item">
           <h2>A2 is posted</h2>
@@ -123,7 +161,11 @@
       </div>
     </div>
     <div class="main-rightside">
-      <div class="main-page-box-odd main-page-box">
+      <!-- <div class="main-page-box">
+        <h3>Quote of the Day</h3>
+        <p>A v inspiring quote here (rmr to put ASCII quotes)</p>
+      </div> -->
+      <div class="main-page-box main-page-box-first">
         <h3>Academic Integrity</h3>
         <p>All of the work you submit must be done by you, and your work must not be submitted by someone else.
           Plagiarism is academic fraud and is taken very seriously. The department uses software that compares
@@ -131,7 +173,7 @@
           Council, especially the Code of Behaviour on Academic Matters.</p>
         <p>Please also see the information for students from the Office of Student Academic Integrity.</p>
       </div>
-      <div class="main-page-box-even main-page-box">
+      <div class="main-page-box-even">
         <h3>Accessibility Statement</h3>
         <p>Students with diverse learning styles and needs are welcome in this course. In particular, if you have a
           disability/health consideration that may require accommodations, please feel free to approach your
@@ -139,11 +181,11 @@
           with you and AccessAbility Services to ensure you can achieve your learning goals in this course. Enquiries
           are confidential.</p>
       </div>
-      <div class="main-page-box-odd main-page-box">
+      <div class="main-page-box">
         <h3>Acknowledgements</h3>
         <p>All content not cited in this website comes directly from Anna Bretscher's <a href="">CSCB20</a> website, and <a href="">UTSC's Student Policies</a></p>
       </div>
-      <div class="main-page-box-even main-page-box">
+      <div class="main-page-box-even main-page-box-last">
         <h3>Textbook</h3>
         <p>This course will not use a class textbook as the world of web applications is everso changing. Instead, please check out some of the links below as useful class references:</p>
         <p>W3 Schools: <a href="https://www.w3schools.com/html/default.asp">w3schools.com</a></p>
@@ -160,11 +202,34 @@
         <a id="comp" href="https://www.utsc.utoronto.ca/cms/computer-science-1">Department of Computer Science at
           UofT</a>
       </div>
+      <div class="footer-section">
+        <h3>Course Content</h3>
+        <ul>
+          <li><a href="latest-news.html">Latest News</a></li>
+          <li><a href="assignments.html">Assignments</a></li>
+          <li><a href="labs.html">Labs</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="syllabus.html">Syllabus</a></li>
+          <li><a href="https://piazza.com/">Piazza</a></li>
+          <li><a href="https://markus.utsc.utoronto.ca/">Markus</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <ul>
+          <li><a href="course-team.html">Course Team</a></li>
+          <li><a href="feedback.html">Anon Feedback</a></li>
+        </ul>
+      </div>
+    </div>
     <div class="footer-bottom">
       <p>Made with ☕ By <a id="sheeza" href="https://www.linkedin.com/in/sheeza-aziz/">Sheeza Aziz</a> and <a id="piyush" href="#">Piyush Ukni</a></p>
       <p>CSCB20H3 Winter 2020</p>
     </div>
-  </div>
   </footer>
 
 </body>
