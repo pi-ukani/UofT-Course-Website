@@ -4,10 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>CSCB20 | UTSC</title>
-  <link rel="stylesheet" href="../static/css/index.css">
   <link rel="stylesheet" href="/../static/css/index2.css">
-  <link rel="stylesheet" href="/../static/css/a3_pages.css">
-
+ 
 </head>
 
 <body>
@@ -47,41 +45,49 @@
 
   <div class="page-container">
 
-    <div class="form_container">
-      <h1 id="feedback-page-title">Anonymous Feedback:</h1>
-      Feedback To:
-      <select class="feed_select" id="instructor-options">
-        {% for instructor in data %}
-        <option name="{{instructor[1]}}">{{instructor[0]}}</option>
-        {% endfor %}
-      </select>
-      <p>We take your feedback very seriously and ecourage you to write honest, detailed feedback that have a 100%
-        anonymity guaranteed!</p>
+    <!-- <div class="form_container"> -->
+    <h1 id="feedback-page-title">Anonymous Feedback:</h1>
+    Feedback To:
+    <select class="feed_select" id="instructor-options">
+      {% for instructor in data %}
+      <option name="{{instructor[1]}}">{{instructor[0]}}</option>
+      {% endfor %}
+    </select>
+    <p>We take your feedback very seriously and ecourage you to write honest, detailed feedback that have a 100%
+      anonymity guaranteed!</p>
 
-      <h2>Try to answer questions such as:</h2>
-      <p>
-        <li>What do you like about the instructor teaching?
-        <li>What do you recommend the instructor to do to improve their teaching?
-        <li>What do you like about the labs?
-        <li>What do you recommend the lab instructors to do to improve their lab teaching?
-      </p>
+    <h2>Try to answer questions such as:</h2>
+    <p>
+      <li>What do you like about the instructor teaching?
+      <li>What do you recommend the instructor to do to improve their teaching?
+      <li>What do you like about the labs?
+      <li>What do you recommend the lab instructors to do to improve their lab teaching?
+    </p>
 
-      <form onsubmit="getFeedback()">
-        <div class="feedback-page-feedback">
-          <label for="feedback"></label>
-          <textarea name="feedback" id="feedback-text" rows="20" cols="69"
-            placeholder="Write your feedback here..."></textarea>
-        </div>
-        <input id="feedback-submit" class="feed_button" type="submit" value="Submit">
-      </form>
-    </div>
+    <form onsubmit="getFeedback()">
+      <div class="feedback-page-feedback">
+        <label for="feedback"></label>
+        <textarea name="feedback" id="feedback-text" rows="20" cols="69"
+          placeholder="Write your feedback here..."></textarea>
+      </div>
+      <input id="feedback-submit" class="feed_button" type="submit" value="Submit">
+    </form>
   </div>
+  <!-- </div> -->
   <footer>
 
-    <div class="footer-bottom">
-      <p>Made with ☕ By <a id="sheeza" href="https://www.linkedin.com/in/sheeza-aziz/">Sheeza Aziz</a> and <a
-          id="piyush" href="#">Piyush Ukni</a></p>
-      <p>CSCB20H3 Winter 2020</p>
+    <div class="footer-nav">
+      <div class="footer-title">
+        <h1 id="footer-course-title">CSCB20</h1>
+        <h1>Introduction to Databases and Web Applications</h1>
+        <a id="comp" href="https://www.utsc.utoronto.ca/cms/computer-science-1">Department of Computer Science at
+          UofT</a>
+      </div>
+      <div class="footer-bottom">
+        <p>Made with ☕ By <a id="sheeza" href="https://www.linkedin.com/in/sheeza-aziz/">Sheeza Aziz</a> and <a
+            id="piyush" href="#">Piyush Ukni</a></p>
+        <p>CSCB20H3 Winter 2020</p>
+      </div>
     </div>
   </footer>
   <script src="../static/js/jquery.js"></script>
