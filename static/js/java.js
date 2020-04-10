@@ -1,3 +1,13 @@
+function myFunction() {
+    var x = document.getElementById("main-nav-id");
+    if (x.className === "main-nav") {
+        x.className += " responsive";
+    } else {
+        x.className = "main-nav";
+    }
+} <
+/script>
+
 function getFeedback() {
     let utorID = $("#instructor-options option:selected").attr("name");
     let feedback = $("#feedback-text").val();
@@ -44,35 +54,40 @@ function updateMarks() {
 }
 /* FOR HTML/CSS */
 function myFunction() {
-  var x = document.getElementById("main-nav-id");
-  if (x.className === "main-nav") {
-    x.className += " responsive";
-  } else {
-    x.className = "main-nav";
-  }
+    var x = document.getElementById("main-nav-id");
+    if (x.className === "main-nav") {
+        x.className += " responsive";
+    } else {
+        x.className = "main-nav";
+    }
 }
 //For assignments.html
 function showA1Instructions() {
- document.getElementById('assn-1-instructions').style.display = "block";
- document.getElementById('assn-1-briefing').style.display = "none";
+    document.getElementById('assn-1-instructions').style.display = "block";
+    document.getElementById('assn-1-briefing').style.display = "none";
 }
+
 function showA2Instructions() {
- document.getElementById('assn-2-instructions').style.display = "block";
- document.getElementById('assn-2-briefing').style.display = "none";
+    document.getElementById('assn-2-instructions').style.display = "block";
+    document.getElementById('assn-2-briefing').style.display = "none";
 }
+
 function showA3Instructions() {
- document.getElementById('assn-3-instructions').style.display = "block";
- document.getElementById('assn-3-briefing').style.display = "none";
+    document.getElementById('assn-3-instructions').style.display = "block";
+    document.getElementById('assn-3-briefing').style.display = "none";
 }
+
 function showA1Briefing() {
- document.getElementById('assn-1-briefing').style.display = "block";
- document.getElementById('assn-1-instructions').style.display = "none";
+    document.getElementById('assn-1-briefing').style.display = "block";
+    document.getElementById('assn-1-instructions').style.display = "none";
 }
+
 function showA2Briefing() {
- document.getElementById('assn-2-briefing').style.display = "block";
- document.getElementById('assn-2-instructions').style.display = "none";
+    document.getElementById('assn-2-briefing').style.display = "block";
+    document.getElementById('assn-2-instructions').style.display = "none";
 }
+
 function showA3Briefing() {
- document.getElementById('assn-3-briefing').style.display = "block";
- document.getElementById('assn-3-instructions').style.display = "none";
+    document.getElementById('assn-3-briefing').style.display = "block";
+    document.getElementById('assn-3-instructions').style.display = "none";
 }
