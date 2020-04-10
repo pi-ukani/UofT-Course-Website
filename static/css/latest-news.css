@@ -1,0 +1,16 @@
+/* LATEST NEWS */
+.latest-news-page {
+  background-color: rgb(229, 231, 233);
+  box-shadow: 1px 4px 8px 1px rgba(0,0,0,0.2);
+}
+.latest-news-page:hover {
+  box-shadow: 3px 8px 16px 3px rgba(0,0,0,0.2);
+}
+.latest-news-page .news-item:hover {
+  box-shadow: 1px 4px 8px 1px rgba(0,0,0,0.2);
+}
+.latest-news-page .news-item-date {
+  background-color: rgba(52, 152, 219, 0.5);
+  border-radius: 10px;
+}
+/* LATEST NEWS END */

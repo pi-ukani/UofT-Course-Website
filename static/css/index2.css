@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 html,
 body {
   font-family: 'Roboto', sans-serif;
@@ -341,6 +343,7 @@ footer {
 /* LATEST NEWS END */
 
 
+>>>>>>> b5168afc35ab623fe937292b078fb8732b381a15
 /* ANON FEEDBACK */
 .feedback-page-email input,
 .feedback-page-feedback textarea {
@@ -374,6 +377,8 @@ footer {
 
 /* ANON FEEDBACK END */
 
+<<<<<<< HEAD
+=======
 
 /* LABS */
 .lab-week,
@@ -846,6 +851,7 @@ footer {
 /* LOGIN PAGE END */
 
 
+>>>>>>> b5168afc35ab623fe937292b078fb8732b381a15
 /* STUDENT GRADES */
 .student-grades-container {
   margin-bottom: 5%;
