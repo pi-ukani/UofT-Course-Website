@@ -169,10 +169,10 @@ footer {
   transition: 0.4s;
 }
 .footer-nav {
-  display: flex;
+  /* display: flex; */
   margin: 0% 5%;
 }
-.footer-section {
+/* .footer-section {
   text-align: center;
   flex: 1;
 }
@@ -188,11 +188,12 @@ footer {
   text-align: center;
   text-decoration: none;
   font-size: 1.25rem;
-}
+} */
 .footer-bottom {
-  display: flex;
-  justify-content: space-around;
-  margin: auto 5%;
+  /* display: flex; */
+  /* justify-content: space-around; */
+  /* display: inline-block; */
+  /* margin: auto 5%; */
 }
 /* for mobile */
 /* for iPad */
