@@ -25,11 +25,15 @@ button:hover {
 }
 textarea {
   padding: 1%;
+  width: 90%;
   font-size: 1.1rem;
 }
 textarea:focus {
   border: 1px solid black;
   outline: none;
+}
+.dashboard-col h3 {
+  margin-bottom: 1.5%;
 }
 /* for mobile */
 /* for iPad */
