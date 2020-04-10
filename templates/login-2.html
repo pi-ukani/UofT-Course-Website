@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>CSCB20 | UTSC</title>
+  <link rel="stylesheet" href="../static/css/index2.css">
+  <link rel="shortcut icon" href="../static/photos/UofT_tree_with_colours.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,600&family=Playfair+Display&display=swap" rel="stylesheet">
+
+
+  <!-- <link rel="stylesheet" href="../static/css/a3_pages.css"> -->
+</head>
+
+<body>
+  <div class="index-container">
+    <div class="index-main">
+      <div class="ls">
+        <h1 id="course-title-login">CSCB20 Winter 2020: Introduction to Databases and Web Applications</h1>
+        <div class="imgs-row">
+          <img src="../static/photos/sigma-symbol.png" alt="relational algebra symbol">
+          <img src="../static/photos/sql-symbol.png" alt="relational algebra symbol">
+          <img src="../static/photos/python-symbol.png" alt="relational algebra symbol">
+          <img src="../static/photos/web-dev-symbol.png" alt="relational algebra symbol">
+        </div>
+        <div class="footer-row">
+          <p>Made with ☕ By <a class="piyush" href="#">Piyush Ukni</a> and <a class="sheeza" href="https://www.linkedin.com/in/sheeza-aziz/">Sheeza Aziz</a></p>
+          <p><a class="comp" href="https://www.utsc.utoronto.ca/cms/computer-science-1">Department of Computer Science at
+                    UofT</a></p>
+        </div>
+      </div>
+      <div class="rs">
+        <div class="utsc-logo-container">
+          <img class="utsc-logo" src="../static/photos/utsc-logo.png" alt="utsc logo">
+        </div>
+        <div class="login-form">
+          <form action="/login" method="post">
+            <div class="form-container">
+              <div class="login-username">
+                <label for="username-login">Username:</label>
+                <br>
+                <input type="text" id="username-login" name="firstname" placeholder="smithjohn">
+              </div>
+              <div class="login-password">
+                <label for="password-login">Password:</label>
+                <br>
+                <input type="password" id="password-login" name="firstname" placeholder="********">
+              </div>
+              <button id="sign-in" type="submit" name="button">Sign In</button>
+              <p>Do not have an account? <a onclick="location.href='signup'">Sign up here</a></p>
+            </div>
+          </form>
+          {% if login == "failed" %}
+          <h2 id="incorrect-login">Incorrect Username OR Password</h2>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

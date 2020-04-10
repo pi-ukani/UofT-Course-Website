@@ -5,20 +5,13 @@
   <meta charset="utf-8">
   <title>CSCB20 | UTSC</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700&display=swap" rel="stylesheet">
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet"> -->
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=Playfair+Display&display=swap" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,600&family=Playfair+Display&display=swap" rel="stylesheet">
 
-  <!-- <link rel="stylesheet" href="../static/css/index.css"> -->
   <link rel="stylesheet" href="../../static/css/index2.css">
-  <!-- <link rel="stylesheet" href="../static/css/index3.css"> -->
 </head>
 
 <body>
-  </script>
-  <!-- <div class="spacer">
-    &nbsp;
-  </div> -->
+
   <div class="index-container">
     <div class="index-main">
       <div class="ls">
@@ -40,7 +33,7 @@
           <img class="utsc-logo" src="../../static/photos/utsc-logo.png" alt="utsc logo">
         </div>
           <div class="login-form">
-            <form action="" method="post">
+            <form action="/login" method="post">
               <div class="form-container">
                 <div class="login-username">
                   <label for="username-login">Username:</label>
@@ -52,10 +45,13 @@
                   <br>
                   <input type="password" id="password-login" name="firstname" placeholder="********">
                 </div>
-                <button id="sign-in" type="button" name="button">Sign In</button>
-                <p>Do not have an account? <a href="sign-up.html">Sign up here</a></p>
+                <button id="sign-in" type="submit" name="button">Sign In</button>
+                <p>Do not have an account? <a onclick="location.href='signup'">Sign up here</a></p>
               </div>
             </form>
+            {% if login == "failed" %}
+            <h2 id="incorrect-login">Incorrect Username OR Password</h2>
+            {% endif %}
           </div>
       </div>
     </div>
