@@ -95,5 +95,9 @@ form button {
 }
 
 .modify_grade {
-    width: 40%;
+    width: 60%;
+}
+
+#update-marks-button {
+    align-items: center;
 }

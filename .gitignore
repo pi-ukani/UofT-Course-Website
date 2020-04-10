@@ -6,3 +6,4 @@ __pycache__/
 templates/feedback_from_student_bak.html
 templates/feedback_to_instructor_or.html
 feedback_old.html
+demo.log

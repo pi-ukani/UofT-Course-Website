@@ -2924,3 +2924,124 @@ INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:21:35] "[37mGET /static/css/a3_page
 INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:21:35] "[37mGET /static/js/jquery.js HTTP/1.1[0m" 200 -
 INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:21:35] "[37mGET /static/js/java.js HTTP/1.1[0m" 200 -
 INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:21:35] "[37mGET /static/photos/UofT_tree_with_colours.png HTTP/1.1[0m" 200 -
+INFO:sqlalchemy.engine.base.Engine:SELECT user_type FROM users WHERE username='abbas'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT * FROM marks
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT name FROM users WHERE username='abbas'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT * FROM remarks
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:26:44] "[37mGET /yourinfo HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:26:45] "[37mGET /static/css/index2.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:26:45] "[37mGET /static/photos/UofT_tree_with_colours.png HTTP/1.1[0m" 200 -
+INFO:sqlalchemy.engine.base.Engine:SELECT user_type FROM users WHERE username='abbas'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT * FROM marks
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT name FROM users WHERE username='abbas'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT * FROM remarks
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:27:10] "[37mGET /yourinfo HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:27:11] "[37mGET /static/photos/UofT_tree_with_colours.png HTTP/1.1[0m" 200 -
+INFO:sqlalchemy.engine.base.Engine:SELECT user_type FROM users WHERE username='abbas'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT * FROM marks
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT name FROM users WHERE username='abbas'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT * FROM remarks
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:27:15] "[37mGET /yourinfo HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:27:15] "[37mGET /static/css/index.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:27:15] "[37mGET /static/css/index2.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:27:15] "[37mGET /static/js/jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:27:15] "[37mGET /static/js/java.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:27:15] "[37mGET /static/css/a3_pages.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:27:15] "[37mGET /static/photos/UofT_tree_with_colours.png HTTP/1.1[0m" 200 -
+INFO:sqlalchemy.engine.base.Engine:SELECT user_type FROM users WHERE username='abbas'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT user_type FROM users WHERE username='abbas'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:UPDATE marks SET a1 = 70, a2 = 50, a3 = 60, midterm = 80, final = 100 WHERE username='azizsheez'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT * FROM marks
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT name FROM users WHERE username='abbas'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:COMMIT
+INFO:sqlalchemy.engine.base.Engine:SELECT * FROM remarks
+INFO:sqlalchemy.engine.base.Engine:UPDATE marks SET a1 = 85, a2 = 45, a3 = 85, midterm = 75, final = 99 WHERE username='ukanipiy'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:27:19] "[37mGET /yourinfo HTTP/1.1[0m" 200 -
+INFO:sqlalchemy.engine.base.Engine:COMMIT
+INFO:sqlalchemy.engine.base.Engine:UPDATE marks SET a1 = 20, a2 = 100, a3 = 28, midterm = 4, final = 100 WHERE username='stud1'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:COMMIT
+INFO:sqlalchemy.engine.base.Engine:UPDATE marks SET a1 = 21, a2 = 7, a3 = 67, midterm = 100, final = 20 WHERE username='stud2'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:COMMIT
+INFO:sqlalchemy.engine.base.Engine:UPDATE marks SET a1 = 23, a2 = 25, a3 = 0, midterm = 0, final = 0 WHERE username='Test1'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:COMMIT
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:27:19] "[32mPOST /remark HTTP/1.1[0m" 302 -
+INFO:sqlalchemy.engine.base.Engine:SELECT user_type FROM users WHERE username='abbas'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT * FROM marks
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT name FROM users WHERE username='abbas'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT * FROM remarks
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:28:17] "[37mGET /yourinfo HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:28:17] "[37mGET /static/photos/UofT_tree_with_colours.png HTTP/1.1[0m" 200 -
+INFO:sqlalchemy.engine.base.Engine:SELECT user_type FROM users WHERE username='abbas'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT * FROM marks
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT name FROM users WHERE username='abbas'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT * FROM remarks
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:28:18] "[37mGET /yourinfo HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:28:18] "[37mGET /static/photos/UofT_tree_with_colours.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:29:20] "[32mGET /Logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:29:20] "[37mGET /Login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:29:20] "[37mGET /static/photos/title.jpg HTTP/1.1[0m" 200 -
+INFO:sqlalchemy.engine.base.Engine:SELECT * FROM users
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:29:25] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:sqlalchemy.engine.base.Engine:SELECT user_type FROM users WHERE username='ukanipiy'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT * FROM marks WHERE username='ukanipiy'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT name FROM users WHERE username='ukanipiy'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:29:25] "[37mGET /yourinfo HTTP/1.1[0m" 200 -
+INFO:sqlalchemy.engine.base.Engine:SELECT user_type FROM users WHERE username='ukanipiy'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT name, username FROM users WHERE user_type='instructor'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:30:08] "[37mGET /feedback HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:30:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:30:18] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:30:18] "[37mGET /Login HTTP/1.1[0m" 200 -
+INFO:sqlalchemy.engine.base.Engine:SELECT * FROM users
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:30:23] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:sqlalchemy.engine.base.Engine:SELECT user_type FROM users WHERE username='abbas'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT * FROM marks
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT name FROM users WHERE username='abbas'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT * FROM remarks
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:30:23] "[37mGET /yourinfo HTTP/1.1[0m" 200 -
+INFO:sqlalchemy.engine.base.Engine:SELECT user_type FROM users WHERE username='abbas'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT * FROM feedback WHERE instructor_id='abbas'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:30:25] "[37mGET /feedback HTTP/1.1[0m" 200 -
