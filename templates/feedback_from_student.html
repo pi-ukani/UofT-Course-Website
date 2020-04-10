@@ -4,13 +4,17 @@
 <head>
   <meta charset="utf-8">
   <title>CSCB20 | UTSC</title>
-  <link rel="stylesheet" href="../static/css/index2.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="../static/css/index2.css"> -->
+  <link rel="stylesheet" href="../static/css/the-actual-index.css">
+  <link rel="stylesheet" href="../static/css/labs.css">
 </head>
 
 <body>
   <div class="main-nav" id="main-nav-id">
     <a class="nav-title" href="index.html">CSCB20</a>
     <a class="nav-buttn" href="latest-news.html">Latest News</a>
+    <a class="nav-buttn" href="student-grades.html">My Dashboard</a>
     <a class="nav-buttn" href="assignments.html">Assignments</a>
     <a class="nav-buttn" href="https://piazza.com/">Piazza</a>
     <a class="nav-buttn" href="https://markus.utsc.utoronto.ca">Markus</a>
@@ -19,7 +23,8 @@
     <a class="nav-buttn" href="labs.html">Labs</a>
     <a class="nav-buttn" href="course-team.html">Course Team</a>
     <a class="nav-buttn" href="calender.html">Calender</a>
-    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">
+    <a class="nav-buttn login_button" id="login_button" href="{{login_button}}">{{login_button}}</a>
+     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">
       <div class="bar"></div>
       <div class="bar"></div>
       <div class="bar"></div>
@@ -42,21 +47,21 @@
 
 
   <div class="page-container">
-    <h1>Feedback from Students!</h1>
-  </div>
-  </div>
-
-  <div id="student-feedback" class="container-2">
-    <div class="template">
-      <strong>
-        <ul>
-          {% for feedback in data %}
-          <li>{{feedback[1]}}</li>
-          {% endfor %}
-        </ul>
-      </strong>
+    <h1>Student Feedback</h1>
+    <div id="student-feedback" class="container-2">
+      <div class="template">
+        <strong>
+          <ul>
+            {% for feedback in data %}
+            <li>{{feedback[1]}}</li>
+            {% endfor %}
+          </ul>
+        </strong>
+      </div>
     </div>
   </div>
+
+
 
   <footer>
     <div class="footer-nav">
@@ -66,35 +71,11 @@
         <a id="comp" href="https://www.utsc.utoronto.ca/cms/computer-science-1">Department of Computer Science at
           UofT</a>
       </div>
-      <div class="footer-section">
-        <h3>Course Content</h3>
-        <ul>
-          <li><a href="latest-news.html">Latest News</a></li>
-          <li><a href="assignments.html">Assignments</a></li>
-          <li><a href="labs.html">Labs</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h3>Resources</h3>
-        <ul>
-          <li><a href="syllabus.html">Syllabus</a></li>
-          <li><a href="https://piazza.com/">Piazza</a></li>
-          <li><a href="https://markus.utsc.utoronto.ca/">Markus</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h3>Contact Us</h3>
-        <ul>
-          <li><a href="course-team.html">Course Team</a></li>
-          <li><a href="feedback.html">Anon Feedback</a></li>
-        </ul>
-      </div>
-    </div>
     <div class="footer-bottom">
-      <p>Made with ☕ By <a id="sheeza" href="https://www.linkedin.com/in/sheeza-aziz/">Sheeza Aziz</a> and <a
-          id="piyush" href="#">Piyush Ukni</a></p>
+      <p>Made with ☕ By <a id="sheeza" href="https://www.linkedin.com/in/sheeza-aziz/">Sheeza Aziz</a> and <a id="piyush" href="#">Piyush Ukni</a></p>
       <p>CSCB20H3 Winter 2020</p>
     </div>
+  </div>
   </footer>
 
 </body>
