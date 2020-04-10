@@ -3790,3 +3790,96 @@ INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 15:15:49] "[37mGET /static/photos/UofT
 =======
 >>>>>>> b1d42efb03ae8657456eec9532f7fdc9c44c5bba
 >>>>>>> 8c686678f27f88262844a6bc3007063c2f22f620
+INFO:sqlalchemy.engine.base.Engine:SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT user_type FROM users WHERE username='ukanipiy'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT * FROM marks WHERE username='ukanipiy'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT name FROM users WHERE username='ukanipiy'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 15:28:25] "[37mGET /yourinfo HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 15:28:25] "[37mGET /static/photos/UofT_tree_with_colours.png HTTP/1.1[0m" 200 -
+INFO:sqlalchemy.engine.base.Engine:SELECT user_type FROM users WHERE username='ukanipiy'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT * FROM marks WHERE username='ukanipiy'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT name FROM users WHERE username='ukanipiy'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 15:28:26] "[37mGET /yourinfo HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 15:28:26] "[37mGET /static/photos/UofT_tree_with_colours.png HTTP/1.1[0m" 200 -
+INFO:sqlalchemy.engine.base.Engine:SELECT user_type FROM users WHERE username='ukanipiy'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT * FROM marks WHERE username='ukanipiy'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT name FROM users WHERE username='ukanipiy'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 15:35:51] "[37mGET /yourinfo HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 15:35:52] "[37mGET /static/photos/UofT_tree_with_colours.png HTTP/1.1[0m" 200 -
+INFO:sqlalchemy.engine.base.Engine:SELECT user_type FROM users WHERE username='ukanipiy'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT * FROM marks WHERE username='ukanipiy'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT name FROM users WHERE username='ukanipiy'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 15:38:13] "[37mGET /yourinfo HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 15:38:13] "[37mGET /static/photos/UofT_tree_with_colours.png HTTP/1.1[0m" 200 -
+INFO:sqlalchemy.engine.base.Engine:SELECT user_type FROM users WHERE username='ukanipiy'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT * FROM marks WHERE username='ukanipiy'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT name FROM users WHERE username='ukanipiy'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 15:38:21] "[37mGET /yourinfo HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 15:38:21] "[37mGET /static/css/index.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 15:38:21] "[37mGET /static/css/index2.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 15:38:21] "[37mGET /static/css/a3_pages.css HTTP/1.1[0m" 200 -
+INFO:sqlalchemy.engine.base.Engine:SELECT user_type FROM users WHERE username='ukanipiy'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT * FROM marks WHERE username='ukanipiy'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT name FROM users WHERE username='ukanipiy'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 15:38:21] "[37mGET /yourinfo HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 15:38:21] "[37mGET /static/css/index.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 15:38:21] "[37mGET /static/css/index2.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 15:38:21] "[37mGET /static/css/a3_pages.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 15:38:21] "[37mGET /static/photos/UofT_tree_with_colours.png HTTP/1.1[0m" 200 -
+INFO:sqlalchemy.engine.base.Engine:SELECT user_type FROM users WHERE username='ukanipiy'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT * FROM marks WHERE username='ukanipiy'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT name FROM users WHERE username='ukanipiy'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 15:38:52] "[37mGET /yourinfo HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 15:38:52] "[37mGET /static/photos/UofT_tree_with_colours.png HTTP/1.1[0m" 200 -
+INFO:sqlalchemy.engine.base.Engine:SELECT user_type FROM users WHERE username='ukanipiy'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT * FROM marks WHERE username='ukanipiy'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT name FROM users WHERE username='ukanipiy'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 15:39:08] "[37mGET /yourinfo HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 15:39:08] "[37mGET /static/css/index.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 15:39:08] "[37mGET /static/css/index2.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 15:39:08] "[37mGET /static/css/a3_pages.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 15:39:09] "[37mGET /static/photos/UofT_tree_with_colours.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 15:39:53] "[32mGET /Logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 15:39:53] "[37mGET /Login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 15:39:53] "[37mGET /static/photos/title.jpg HTTP/1.1[0m" 200 -
+INFO:sqlalchemy.engine.base.Engine:SELECT * FROM users
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 15:39:58] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:sqlalchemy.engine.base.Engine:SELECT user_type FROM users WHERE username='abbas'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT * FROM marks
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT name FROM users WHERE username='abbas'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT * FROM remarks
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 15:39:58] "[37mGET /yourinfo HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 15:39:58] "[37mGET /static/js/jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 15:39:58] "[37mGET /static/js/java.js HTTP/1.1[0m" 200 -
