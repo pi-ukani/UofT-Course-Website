@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" id="index">
+
+<head>
+  <meta charset="utf-8">
+  <title>CSCB20 | UTSC</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="../static/css/index.css"> -->
+  <link rel="stylesheet" href="../../static/css/index2.css">
+  <!-- <link rel="stylesheet" href="../static/css/index3.css"> -->
+</head>
+
+<body>
+  <div class="main-nav" id="main-nav-id">
+    <a class="nav-title" href="index.html">CSCB20</a>
+    <a class="nav-buttn" href="latest-news.html">Latest News</a>
+    <a class="nav-buttn" href="assignments.html">Assignments</a>
+    <a class="nav-buttn" href="https://piazza.com/">Piazza</a>
+    <a class="nav-buttn" href="https://markus.utsc.utoronto.ca">Markus</a>
+    <a class="nav-buttn" href="feedback.html">Anon Feedback</a>
+    <a class="nav-buttn" href="syllabus.html">Syllabus</a>
+    <a class="nav-buttn" href="labs.html">Labs</a>
+    <a class="nav-buttn" href="course-team.html">Course Team</a>
+    <a class="nav-buttn" href="calender.html">Calender</a>
+     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </a>
+  </div>
+   <script>
+    function myFunction() {
+      var x = document.getElementById("main-nav-id");
+      if (x.className === "main-nav") {
+        x.className += " responsive";
+      } else {
+        x.className = "main-nav";
+      }
+    }
+
+    function showA1Instructions() {
+     document.getElementById('assn-1-instructions').style.display = "block";
+     document.getElementById('assn-1-briefing').style.display = "none";
+    }
+    function showA2Instructions() {
+     document.getElementById('assn-2-instructions').style.display = "block";
+     document.getElementById('assn-2-briefing').style.display = "none";
+    }
+    function showA3Instructions() {
+     document.getElementById('assn-3-instructions').style.display = "block";
+     document.getElementById('assn-3-briefing').style.display = "none";
+    }
+    function showA1Briefing() {
+     document.getElementById('assn-1-briefing').style.display = "block";
+     document.getElementById('assn-1-instructions').style.display = "none";
+    }
+    function showA2Briefing() {
+     document.getElementById('assn-2-briefing').style.display = "block";
+     document.getElementById('assn-2-instructions').style.display = "none";
+    }
+    function showA3Briefing() {
+     document.getElementById('assn-3-briefing').style.display = "block";
+     document.getElementById('assn-3-instructions').style.display = "none";
+    }
+  </script>
+  <div class="spacer">
+    &nbsp;
+  </div>
+
+  <div class="page-container">
+    <h1>Assignments</h1>
+    <div class="assn-row">
+      <div class="assn-box">
+        <h2 class="assn-name">Assignment 1:</h2>
+        <p class="due-item-date">Due: Saturday, February 8, 11:59PM</p>
+        <nav>
+          <input type="button" value="Briefing" onclick="showA1Briefing()">
+          <input type="button" value="Instructions" onclick="showA1Instructions()">
+        </nav>
+        <div class="assn-info">
+          <p id="assn-1-briefing"><u><em>Assignment 1 Briefing:</em></u> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p id="assn-1-instructions" style="display:none;"><u><em>Assignment 1 Instructions:</em></u> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></p>
+        </div>
+        <div class="assn-resources">
+          <h2>Resources:</h2>
+          <a href="../static/PDFs/syllabus.pdf">Link</a>
+          <a href="../static/PDFs/syllabus.pdf">Link</a>
+        </div>
+      </div>
+      <div class="assn-box">
+        <h2 class="assn-name">Assignment 2:</h2>
+        <p class="due-item-date">Due: Saturday, February 8, 11:59PM</p>
+        <nav>
+          <input type="button" value="Briefing" onclick="showA2Briefing()">
+          <input type="button" value="Instructions" onclick="showA2Instructions()">
+        </nav>
+        <div class="assn-info">
+          <p id="assn-2-briefing"><u><em>Assignment 2 Briefing:</em></u> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p id="assn-2-instructions" style="display:none;"><u><em>Assignment 2 Instructions:</em></u> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></p>
+        </div>
+        <div class="assn-resources">
+          <h2>Resources:</h2>
+          <a href="../static/PDFs/syllabus.pdf">Link</a>
+          <a href="../static/PDFs/syllabus.pdf">Link</a>
+        </div>
+      </div>
+      <div class="assn-box assn-box-last">
+        <h2 class="assn-name">Assignment 3:</h2>
+        <p class="due-item-date">Due: Saturday, February 8, 11:59PM</p>
+        <nav>
+          <input type="button" value="Briefing" onclick="showA3Briefing()">
+          <input type="button" value="Instructions" onclick="showA3Instructions()">
+        </nav>
+        <div class="assn-info">
+          <p id="assn-3-briefing"><u><em>Assignment 3 Briefing:</em></u> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p id="assn-3-instructions" style="display:none;"><u><em>Assignment 3 Instructions:</em></u> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></p>
+        </div>
+        <div class="assn-resources">
+          <h2>Resources:</h2>
+          <a href="../static/PDFs/syllabus.pdf">Link</a>
+          <a href="../static/PDFs/syllabus.pdf">Link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <footer>
+    <div class="footer-nav">
+      <div class="footer-title">
+        <h1 id="footer-course-title">CSCB20</h1>
+        <h1>Introduction to Databases and Web Applications</h1>
+        <a id="comp" href="https://www.utsc.utoronto.ca/cms/computer-science-1">Department of Computer Science at
+          UofT</a>
+      </div>
+    <div class="footer-bottom">
+      <p>Made with ☕ By <a id="sheeza" href="https://www.linkedin.com/in/sheeza-aziz/">Sheeza Aziz</a> and <a id="piyush" href="#">Piyush Ukni</a></p>
+      <p>CSCB20H3 Winter 2020</p>
+    </div>
+  </div>
+  </footer>
+
+</body>
+
+</html>

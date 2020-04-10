@@ -73,3 +73,27 @@ form button {
 #signup_b {
     float: right;
 }
+
+/* table structure */
+.table_struct {
+    width: 100%;
+    display: table;
+}
+
+.table_cell {
+    display: table-cell;
+    padding: 1%;
+    text-align: center;
+}
+
+#row_group {
+    display: table-row-group;
+}
+
+.ind_row {
+    display: table-row;
+}
+
+.modify_grade {
+    width: 40%;
+}
