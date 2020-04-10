@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <title>CSCB20 | UTSC</title>
   <!-- <link rel="stylesheet" href="../static/css/index.css"> -->
-  <link rel="stylesheet" href="../static/css/index2.css">
+  <!-- <link rel="stylesheet" href="../static/css/index2.css"> -->
+  <link rel="stylesheet" href="../static/css/the-actual-index.css">
   <link rel="stylesheet" href="../static/css/instructor_info.css">
   <link rel="shortcut icon" href="../static/photos/UofT_tree_with_colours.png" type="image/x-icon">
 
@@ -15,7 +16,8 @@
 <body>
   <div class="main-nav" id="main-nav-id">
     <a class="nav-title" href="index">CSCB20</a>
-    <a class="nav-buttn" href="yourinfo">Dashboard</a>
+    <a class="nav-buttn" href="index">Home</a>
+<a class="nav-buttn" href="yourinfo">Dashboard</a>
     <a class="nav-buttn" href="assignments">Assignments</a>
     <a class="nav-buttn" href="https://www.piazza.com">Piazza</a>
     <a class="nav-buttn" href="https://markus.utsc.utoronto.ca">Markus</a>
@@ -33,13 +35,6 @@
   </div>
 
 
-<<<<<<< HEAD
-
-
-  <div class="page-container">
-         <h1 id="labs-page-title"><strong>Dashboard</strong></h1>
-         <h3 id="labs-page-title">Welcome {{name}}!</h3>
-=======
   <script>
     function myFunction() {
       var x = document.getElementById("main-nav-id");
@@ -56,7 +51,6 @@
   <div class="page-container">
     <h1 id="labs-page-title"><strong>Dashboard</strong></h1>
     <h3 id="labs-page-title">Welcome {{name}}!</h3>
->>>>>>> 83a75987341850eb71efaff4087d1ea718d447c3
 
 
     <div class="lab-weeks">
@@ -85,7 +79,7 @@
           <div id="row_group">
             {% for item in data %}
             <div class="ind_row" name="{{item[0]}}">
-              <div class="table_cell">{{item[0]}}</div>
+              <div class="table_cell"><b>{{item[0]}}</b></div>
               <div class="table_cell"><input class="modify_grade" type="number" name="a1" value="{{item[1]}}"></div>
               <div class="table_cell"><input class="modify_grade" type="number" name="a2" value="{{item[2]}}"></div>
               <div class="table_cell"><input class="modify_grade" type="number" name="a3" value="{{item[3]}}"></div>
@@ -96,11 +90,12 @@
             {% endfor %}
           </div>
 
-          <form onsubmit="updateMarks()">
-            <button type="submit" id="modify_grades">Modify Grades</button>
-          </form>
+          
 
         </div>
+        <form onsubmit="updateMarks()">
+            <button type="submit" id="modify_grades">Modify Grades</button>
+          </form>
       </div>
 
       <div class="lab-resources">
@@ -131,10 +126,18 @@
   </div>
 
   <footer>
-
-    <div class="footer-bottom">
-      <p>By Sheeza Aziz and Piyush Ukni</p>
-      <p>CSCB20H3 Winter 2020</p>
+    <div class="footer-nav">
+      <div class="footer-title">
+        <h1 id="footer-course-title">CSCB20</h1>
+        <h1>Introduction to Databases and Web Applications</h1>
+        <a id="comp" href="https://www.utsc.utoronto.ca/cms/computer-science-1">Department of Computer Science at
+          UofT</a>
+      </div>
+      <div class="footer-bottom">
+        <p>Made with ☕ By <a id="sheeza" href="https://www.linkedin.com/in/sheeza-aziz/">Sheeza Aziz</a> and <a
+            id="piyush" href="#">Piyush Ukni</a></p>
+        <p>CSCB20H3 Winter 2020</p>
+      </div>
     </div>
   </footer>
   <script src="../static/js/jquery.js"></script>

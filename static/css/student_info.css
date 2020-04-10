@@ -1,0 +1,85 @@
+<<<<<<< HEAD:templates/student_info.css
+.dashboard-row {
+  margin-bottom: 1%;
+}
+.dashboard-col {
+=======
+.lab-week,
+.lab-resources {
+  border-radius: 5px;
+  box-shadow: 1px 2px #0086ea;
+>>>>>>> 0fa56e14c500f1e1950df12201c30e0b5cf6b3e5:static/css/student_info.css
+  border: 1px solid black;
+  padding: 1%;
+  width: 100%;
+  background-color: white;
+}
+select {
+  background-color: rgb(41, 128, 185);
+  color: white;
+  border: 1px solid black;
+  font-size: 1.1rem;
+}
+button {
+  padding: 2%;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  background-color: rgb(208, 211, 212);
+  box-shadow: 1px 1px 5px #888888;
+}
+button:hover {
+  box-shadow: 1px 1px 10px #888888;
+}
+textarea {
+  padding: 1%;
+  font-size: 1.1rem;
+}
+textarea:focus {
+  border: 1px solid black;
+  outline: none;
+}
+/* for mobile */
+/* for iPad */
+@media only screen and (max-width: 999px) {
+  .dashboard-col {
+    margin-bottom: 2%;
+  }
+}
+
+/* for desktop */
+@media only screen and (min-width: 1000px) {
+  .dashboard-row {
+    display: flex;
+  }
+  .dashboard-col {
+    flex: 1;
+    margin-right: 2%;
+  }
+}
+<<<<<<< HEAD:templates/student_info.css
+=======
+
+
+.box {
+  width: 98%;
+  border-radius: 2%;
+  box-shadow: 2px 2px #0086ea;
+}
+
+
+.student_marks {
+  width: 100%;
+  border: 1px solid black;
+  box-shadow: 1px 2px #0086ea;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  text-align-last: center;
+  padding-right: 29px;
+  direction: rtl;
+
+}
+>>>>>>> 0fa56e14c500f1e1950df12201c30e0b5cf6b3e5:static/css/student_info.css
