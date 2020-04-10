@@ -68,7 +68,7 @@ def labs():
         return redirect(url_for("Login"))
     return render_template("labs.html", login_button="Logout")
 
-
+# commenting to push
 @app.route("/syllabus")
 def syllabus():
     if not logged_in():
