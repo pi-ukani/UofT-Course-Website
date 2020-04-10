@@ -52,6 +52,12 @@ a:hover {
   transition: 0.4s;
 }
 
+
+.nav-buttn.login_button {
+  background-color: seagreen;
+  float: right;
+}
+
 .main-nav {
   text-align: center;
   overflow: hidden;
