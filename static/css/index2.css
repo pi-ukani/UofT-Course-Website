@@ -669,3 +669,22 @@ footer {
     margin-top: 10%;
   }
 }
+/* LOGIN PAGE END */
+
+
+/* STUDENT GRADES */
+.student-grades-container {
+  margin-bottom: 5%;
+}
+.grade-row {
+  border: 1px solid black;
+  display: flex;
+  margin-top: -1.5%;
+}
+.grade-box {
+  border: 1px solid black;
+}
+.grade-box p {
+  margin: 10%;
+  text-align: left;
+}
