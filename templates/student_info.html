@@ -4,8 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>CSCB20 | UTSC</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="../static/css/index2.css"> -->
   <link rel="stylesheet" href="../static/css/the-actual-index.css">
-  <link rel="stylesheet" href="../static/css/student_info.css">
+  <link rel="stylesheet" href="student_info.css">
   <link rel="shortcut icon" href="../static/photos/UofT_tree_with_colours.png" type="image/x-icon">
 
 
@@ -13,55 +15,60 @@
 
 <body>
   <div class="main-nav" id="main-nav-id">
-    <a class="nav-title" href="index">CSCB20</a>
-    <a class="nav-buttn" href="index">Home</a>
-<a class="nav-buttn" href="yourinfo">Dashboard</a>
-    <a class="nav-buttn" href="assignments">Assignments</a>
-    <a class="nav-buttn" href="https://www.piazza.com">Piazza</a>
+    <a class="nav-title" href="index.html">CSCB20</a>
+    <a class="nav-buttn" href="latest-news.html">Latest News</a>
+    <a class="nav-buttn" href="student-grades.html">My Dashboard</a>
+    <a class="nav-buttn" href="assignments.html">Assignments</a>
+    <a class="nav-buttn" href="https://piazza.com/">Piazza</a>
     <a class="nav-buttn" href="https://markus.utsc.utoronto.ca">Markus</a>
-    <a class="nav-buttn" href="feedback">Feedback</a>
-    <a class="nav-buttn" href="syllabus">Syllabus</a>
-    <a class="nav-buttn" href="labs">Labs</a>
-    <a class="nav-buttn" href="course-team">Course Team</a>
-    <a class="nav-buttn" href="calender">Calender</a>
-    <a class="nav-buttn login_button" href="{{login_button}}">{{login_button}}</a>
-    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">
-      <div class=" bar"></div>
+    <a class="nav-buttn" href="feedback.html">Anon Feedback</a>
+    <a class="nav-buttn" href="syllabus.html">Syllabus</a>
+    <a class="nav-buttn" href="labs.html">Labs</a>
+    <a class="nav-buttn" href="course-team.html">Course Team</a>
+    <a class="nav-buttn" href="calender.html">Calender</a>
+    <a class="nav-buttn login_button" id="login_button" href="{{login_button}}">{{login_button}}</a>
+     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">
+      <div class="bar"></div>
       <div class="bar"></div>
       <div class="bar"></div>
     </a>
   </div>
+  <div class="spacer">
+    &nbsp;
+  </div>
+
 
 
 
   <div class="page-container">
-    <h1 id="labs-page-title"><b>Dashboard:</b></h1>
-    <h3 id="labs-page-title">Welcome {{name}}!</h3>
-    <div class="lab-weeks">
-      <div class="lab-week">
-        <h2 align="center">-:Your Grades:-</h2>
+    <h1 id="labs-page-title">Dashboard</h1>
+    <h3 id="labs-page-title">Welcome to your dashboard, {{name}} 💻</h3>
+
+    <div class="dashboard-row">
+      <div class="dashboard-col">
+        <h2>Your Marks</h2>
 
         {% for assignment in data %}
         <div class="student_marks">
-          <div class="grades_size"><strong>{{ assignment[0] }}</strong>:- {{assignment[1]}}</div>
+          <div><strong>{{ assignment[0] }}</strong>: {{assignment[1]}}</div>
           </br>
         </div>
         {% endfor %}
       </div>
 
-      <div class="lab-resources">
-        <h2 align="center">-:Remark Request:-</h2>
+      <div class="dashboard-col">
+        <h2>Remark Request</h2>
         <form action="/remark" method="post">
-          <h4> Assignment:</h4>
+          <h3>Please select the evaluation you would like to be remarked:</h3>
           <select name="assignment">
             {% for assignment in data %}
             <option>{{ assignment[0] }}</option>
             {% endfor %}
           </select>
-          <h4> Detailed info: </h4>
-          <textarea class="box" placeholder="Please provide the question number and detailed summary" name="reasons"
-            rows="8" cols="50"></textarea>
-          <button type="submit">Submit</button>
+          <h3>Please provide a detailed explanation for your remark request: </h3>
+          <textarea class="box" placeholder="Please provide the evaluation number and detailed summary..." name="reasons"
+            rows="8" cols="50"></textarea><br>
+          <button type="submit">Submit Request</button>
         </form>
       </div>
     </div>
