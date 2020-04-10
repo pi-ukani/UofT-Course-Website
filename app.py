@@ -7,9 +7,10 @@ app = Flask(__name__)
 app.secret_key = "this_is_a_secret_dont_reveal"
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///assignment3.db"
 app.config["SQLALCHEMY_ECHO"] = True
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False #not using track modifications feature
+# not using track modifications feature
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
-logging.basicConfig(filename='demo.log', level=logging.DEBUG)
+# logging.basicConfig(filename='demo.log', level=logging.DEBUG)
 
 if __name__ == "__main__":
     app.run(debug=True, host="127.0.0.1")
