@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>CSCB20 | UTSC</title>
   <link rel="stylesheet" href="../static/css/index2.css">
+  <link rel="stylesheet" href="../static/css/feedback_from_student.css">
 </head>
 
 <body>
@@ -42,20 +43,17 @@
 
 
   <div class="page-container">
-    <h1>Feedback from Students!</h1>
-  </div>
-  </div>
-
-  <div id="student-feedback" class="container-2">
-    <div class="template">
-      <strong>
-        <ul>
+  
+ <div class="feed_boxs">
+      <div class="feed_box">
+      <h1>Feedback from Students:</h1>
           {% for feedback in data %}
-          <li>{{feedback[1]}}</li>
+          <div class="student_feed">
+         {{feedback[1]}}
+         </div>
           {% endfor %}
-        </ul>
-      </strong>
-    </div>
+      </div>
+  </div>
   </div>
 
   <footer>
