@@ -495,7 +495,6 @@ footer {
     margin-top: 1%;
   }
 }
-
 /* for desktop */
 @media only screen and (min-width: 1000px) {
   .assn-row {
@@ -537,7 +536,6 @@ footer {
   background-color: rgba(52, 152, 219, 0.5);
   border-radius: 10px;
 }
-
 .assn-box input {
   background-color: rgb(189, 189, 189);
   padding: 2.5%;
@@ -572,58 +570,10 @@ footer {
 
 /* LOGIN PAGE */
 .index-main {
-  display: flex;
   min-height: 100vh;
 }
-.index-main .ls, .index-main .rs {
-  flex: 1;
-}
-.index-main .footer-row {
-  display: flex;
-  font-size: 1.06rem;
-  position: fixed;
-  bottom: 0;
-  width: 50%;
-  text-align: center;
-}
-.index-main .footer-row p {
-  width: 100%;
-  margin-left: 1%;
-}
-.index-main .comp {
-  color: #f2f2f2;
-  text-decoration: none;
-}
-.index-main .comp:hover {
-  color: gray;
-}
-.index-main .ls {
-  font-family: 'Crimson Text', serif;
-  color: #f2f2f2;
-  background-color: rgb(21, 67, 96);
-}
-#course-title-login {
-  margin: 3% auto;
-  text-shadow: 2px 2px black;
-  font-size: 2.5rem;
-  text-align: center;
-}
-#course-title-login:hover {
-  text-shadow: 3px 2px black;
-}
-.index-main .ls .imgs-row {
-  display: flex;
-  width: 100%;
-  margin-top: 15%;
-}
-.index-main .ls img {
-  margin: auto;
-  box-shadow: 5px 5px 5px 2px rgba(0,0,0,0.2);
-  height: 150px;
-  width: 20%;
-}
-.index-main .ls img:hover {
-  box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.2);
+.index-main .rs {
+  background-color: rgb(24,24,24);
 }
 /* hacky fix to center an img */
 .index-main .rs .utsc-logo-container {
@@ -631,9 +581,12 @@ footer {
 }
 .index-main .rs .utsc-logo {
   width: 35%;
+  filter: brightness(0) invert(1); /* makes an img white */
+
 }
 .login-form {
-  border: 3px solid rgb(21, 67, 96);
+  border: 3px solid rgb(24,24,24);
+  border-radius: 20px;
   background: rgb(253, 254, 254);
   width: 50%;
   text-align: center;
@@ -649,17 +602,14 @@ footer {
 }
 .login-form label {
   margin-bottom: 20%;
-  /* background-color: green; */
 }
 .login-form input {
   padding: 2%;
   font-size: 1rem;
-  background-color: white;
-  border: 1px solid rgb(21, 67, 96);
   margin-top: 1%;
 }
 .login-form input:focus {
-  border: 2px solid rgb(21, 67, 96);
+  border: 2px solid black;
   outline: none;
 }
 .login-form .login-username, .login-form .login-password {
@@ -667,5 +617,76 @@ footer {
 }
 .login-form .form-container {
   margin-top: 10%;
-  /* background-color: green; */
+}
+/* for mobile */
+/* for iPad */
+@media only screen and (max-width: 1100px) {
+  .index-main .ls {
+    display: none;
+  }
+}
+/* for desktop */
+@media only screen and (min-width: 1000px) {
+  .index-main {
+    display: flex;
+  }
+  .index-main .ls, .index-main .rs {
+    flex: 1;
+  }
+  .index-main .footer-row {
+    display: flex;
+    font-size: 1.06rem;
+    position: fixed;
+    bottom: 0;
+    width: 50%;
+    text-align: center;
+  }
+  .index-main .footer-row p {
+    width: 100%;
+    margin-left: 1%;
+  }
+  .index-main .comp, .index-main .sheeza, .index-main .piyush {
+    text-decoration: none;
+    color: rgb(21, 67, 96);
+    font-size: 1.1rem;
+  }
+  .index-main .comp:hover, .index-main .sheeza:hover, .index-main .piyush:hover {
+    color: rgba(52, 152, 219, 0.5);
+  }
+  .index-main .ls {
+    font-family: 'Crimson Text', serif;
+    color: rgb(21, 67, 96);
+    background-color: rgb(33, 97, 140);
+  }
+  #course-title-login {
+    margin: 3% auto;
+    text-shadow: 1px 1px black;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  #course-title-login:hover {
+    text-shadow: 2px 2px black;
+  }
+  .index-main .ls .imgs-row {
+    display: flex;
+    width: 100%;
+    margin-top: 15%;
+  }
+  .index-main .ls img {
+    margin: auto;
+    box-shadow: 5px 5px 5px 2px rgba(0,0,0,0.2);
+    height: 150px;
+    width: 20%;
+  }
+  .index-main .ls img:hover {
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.2);
+  }
+  #sign-in {
+    font-size: 1rem;
+    background-color: rgb(21, 67, 96);
+    color: #f2f2f2;
+    padding: 1.75%;
+    margin-top: 2%;
+    border-radius: 10px;
+  }
 }
