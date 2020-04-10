@@ -88,10 +88,12 @@ form button {
 
 #row_group {
     display: table-row-group;
+
 }
 
 .ind_row {
     display: table-row;
+
 }
 
 .modify_grade {
@@ -100,4 +102,10 @@ form button {
 
 #modify_grades {
     align-items: center;
+}
+
+.box {
+    width: 98%;
+    border-radius: 2%;
+    box-shadow: 2px 2px #0086ea;
 }
