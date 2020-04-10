@@ -4,10 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>CSCB20 | UTSC</title>
+<<<<<<< HEAD
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700&display=swap" rel="stylesheet">
   <!-- <link rel="stylesheet" href="../static/css/index2.css"> -->
   <link rel="stylesheet" href="../static/css/the-actual-index.css">
   <link rel="stylesheet" href="../static/css/labs.css">
+=======
+  <link rel="stylesheet" href="../static/css/index2.css">
+  <link rel="stylesheet" href="../static/css/feedback_from_student.css">
+>>>>>>> 31800e0c226c2760aecac44ee3bbc57294265282
 </head>
 
 <body>
@@ -44,21 +49,18 @@
     &nbsp;
   </div>
 
-
-
   <div class="page-container">
-    <h1>Student Feedback</h1>
-    <div id="student-feedback" class="container-2">
-      <div class="template">
-        <strong>
-          <ul>
-            {% for feedback in data %}
-            <li>{{feedback[1]}}</li>
-            {% endfor %}
-          </ul>
-        </strong>
+
+ <div class="feed_boxs">
+      <div class="feed_box">
+      <h1>Feedback from Students:</h1>
+          {% for feedback in data %}
+          <div class="student_feed">
+         {{feedback[1]}}
+         </div>
+          {% endfor %}
       </div>
-    </div>
+  </div>
   </div>
 
 
