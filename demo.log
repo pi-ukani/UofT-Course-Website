@@ -91,3 +91,101 @@ INFO:sqlalchemy.engine.base.Engine:()
 INFO:werkzeug:127.0.0.1 - - [27/Mar/2020 23:08:17] "[37mGET /yourinfo HTTP/1.1[0m" 200 -
 INFO:werkzeug:127.0.0.1 - - [27/Mar/2020 23:08:17] "[37mGET /static/css/index.css HTTP/1.1[0m" 200 -
 INFO:werkzeug:127.0.0.1 - - [27/Mar/2020 23:08:17] "[37mGET /static/photos/UofT_tree_with_colours.png HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:45:08] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:45:08] "[37mGET /Login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:45:08] "[37mGET /static/css/index.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:45:08] "[37mGET /static/css/a3_pages.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:45:08] "[37mGET /static/photos/title.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:45:08] "[37mGET /static/photos/UofT_tree_with_colours.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:45:11] "[37mGET /Login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:45:11] "[37mGET /static/photos/UofT_tree_with_colours.png HTTP/1.1[0m" 200 -
+INFO:sqlalchemy.engine.base.Engine:SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT * FROM users
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:45:15] "[37mPOST /login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:45:16] "[37mGET /signup HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:45:19] "[37mGET /Login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:45:20] "[37mGET /signup HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:45:22] "[37mGET /Login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:45:25] "[37mGET /Login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:45:26] "[37mGET /static/photos/UofT_tree_with_colours.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:45:34] "[37mGET /Login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:45:34] "[37mGET /static/photos/UofT_tree_with_colours.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:46:31] "[33mGET /student_info HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:46:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:46:38] "[33mGET /student_info.html HTTP/1.1[0m" 404 -
+INFO:sqlalchemy.engine.base.Engine:SELECT * FROM users
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:47:31] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:sqlalchemy.engine.base.Engine:SELECT user_type FROM users WHERE username='stud1'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT * FROM marks WHERE username='stud1'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT name FROM users WHERE username='stud1'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:47:31] "[37mGET /yourinfo HTTP/1.1[0m" 200 -
+INFO:sqlalchemy.engine.base.Engine:SELECT user_type FROM users WHERE username='stud1'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:INSERT INTO remarks VALUES ('stud1', 'a1', 'hi')
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:COMMIT
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:47:39] "[32mPOST /remark HTTP/1.1[0m" 302 -
+INFO:sqlalchemy.engine.base.Engine:SELECT user_type FROM users WHERE username='stud1'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT * FROM marks WHERE username='stud1'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT name FROM users WHERE username='stud1'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:47:39] "[37mGET /yourinfo HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:47:43] "[37mGET /assignments HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:47:46] "[37mGET /calender HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:47:48] "[37mGET /course-team HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:47:49] "[37mGET /static/photos/anna_bretscher.jpg HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:47:49] "[37mGET /static/photos/anon.png HTTP/1.1[0m" 200 -
+INFO:sqlalchemy.engine.base.Engine:SELECT user_type FROM users WHERE username='stud1'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT * FROM marks WHERE username='stud1'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT name FROM users WHERE username='stud1'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:47:51] "[37mGET /yourinfo HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:48:26] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:sqlalchemy.engine.base.Engine:SELECT user_type FROM users WHERE username='stud1'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT * FROM marks WHERE username='stud1'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:sqlalchemy.engine.base.Engine:SELECT name FROM users WHERE username='stud1'
+INFO:sqlalchemy.engine.base.Engine:()
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:48:26] "[37mGET /yourinfo HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:48:27] "[32mGET /Logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:48:27] "[37mGET /Login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:48:29] "[37mGET /Login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:48:29] "[37mGET /static/photos/UofT_tree_with_colours.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:49:07] "[37mGET /Login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:49:07] "[37mGET /static/photos/UofT_tree_with_colours.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:49:11] "[37mGET /Login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:49:11] "[37mGET /static/photos/UofT_tree_with_colours.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:50:34] "[37mGET /Login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:50:34] "[37mGET /static/photos/UofT_tree_with_colours.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:50:43] "[37mGET /Login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:50:44] "[37mGET /static/photos/UofT_tree_with_colours.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:50:51] "[37mGET /signup HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:50:54] "[37mGET /Login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:51:24] "[37mGET /Login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:51:24] "[37mGET /static/photos/UofT_tree_with_colours.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:51:24] "[37mGET /Login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:51:24] "[37mGET /static/photos/UofT_tree_with_colours.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:51:26] "[37mGET /Login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:51:26] "[37mGET /static/photos/UofT_tree_with_colours.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:51:27] "[37mGET /Login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:51:27] "[37mGET /static/photos/UofT_tree_with_colours.png HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:51:39] "[37mGET /Login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2020 14:51:40] "[37mGET /static/photos/UofT_tree_with_colours.png HTTP/1.1[0m" 200 -
