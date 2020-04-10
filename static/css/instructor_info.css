@@ -33,6 +33,10 @@
     margin-top: 1%;
 }
 
+.grades_size {
+    font-size: 1rem;
+}
+
 .box {
     width: 98%;
     border-radius: 2%;

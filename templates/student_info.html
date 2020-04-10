@@ -4,9 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>CSCB20 | UTSC</title>
-  <!-- <link rel="stylesheet" href="../static/css/index.css"> -->
   <link rel="stylesheet" href="../static/css/the-actual-index.css">
-  <link rel="stylesheet" href="../static/css/a3_pages.css">
   <link rel="stylesheet" href="../static/css/student_info.css">
   <link rel="shortcut icon" href="../static/photos/UofT_tree_with_colours.png" type="image/x-icon">
 
@@ -38,16 +36,13 @@
   <div class="page-container">
     <h1 id="labs-page-title"><b>Dashboard:</b></h1>
     <h3 id="labs-page-title">Welcome {{name}}!</h3>
-
-
-
     <div class="lab-weeks">
       <div class="lab-week">
         <h2 align="center">-:Your Grades:-</h2>
 
         {% for assignment in data %}
         <div class="student_marks">
-          <div><strong>{{ assignment[0] }}</strong>:- {{assignment[1]}}</div>
+          <div class="grades_size"><strong>{{ assignment[0] }}</strong>:- {{assignment[1]}}</div>
           </br>
         </div>
         {% endfor %}
@@ -87,7 +82,7 @@
       </div>
     </div>
   </footer>
-<script src="../static/js/jquery.js"></script>
+  <script src="../static/js/jquery.js"></script>
   <script src="../static/js/java.js"></script>
 </body>
 

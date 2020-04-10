@@ -64,3 +64,20 @@
   border-radius: 2%;
   box-shadow: 2px 2px #0086ea;
 }
+
+
+.student_marks {
+  width: 100%;
+  border: 1px solid black;
+  box-shadow: 1px 2px #0086ea;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  text-align-last: center;
+  padding-right: 29px;
+  direction: rtl;
+
+}
