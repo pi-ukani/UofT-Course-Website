@@ -1,5 +1,7 @@
 .lab-week,
 .lab-resources {
+  border-radius: 5px;
+  box-shadow: 1px 2px #0086ea;
   border: 1px solid black;
   padding: 1%;
   background-color: white;
@@ -54,4 +56,11 @@
     margin-right: 2%;
     width: 20%;
   }
+}
+
+
+.box {
+  width: 98%;
+  border-radius: 2%;
+  box-shadow: 2px 2px #0086ea;
 }
