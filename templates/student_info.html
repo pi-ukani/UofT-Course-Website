@@ -6,6 +6,7 @@
   <title>CSCB20 | UTSC</title>
   <link rel="stylesheet" href="../static/css/index.css">
   <link rel="stylesheet" href="../static/css/index2.css">
+  <link rel="stylesheet" href="../static/css/a3_pages.css">
   <link rel="shortcut icon" href="../static/photos/UofT_tree_with_colours.png" type="image/x-icon">
 
 
@@ -53,27 +54,28 @@
 
     <div class="lab-weeks">
       <div class="lab-week">
-        <h1>Your Marks</h1>
+        <h2 align="center">Your Marks</h2>
         <ul>
+        <div class="table_struct">
+        <div id="row_group">
           {% for assignment in data %}
-            <li><strong>{{ assignment[0] }}</strong>: {{assignment[1]}}</li>
+            <div class="ind_row" align="center"><strong>{{ assignment[0] }}</strong>:> {{assignment[1]}}</div>
+            </br>
           {% endfor %}
         </ul>
       </div>
-      <div class="lab-week">
-        <h1>Remark Request</h1>
+     
+      <div class="lab-resources">
+        <h2>Remark Request</h2>
         <form action="/remark" method="post">
-          Assignment:
+         <h4> Assignment:</h4>
           <select name="assignment">
             {% for assignment in data %}
               <option>{{ assignment[0] }}</option>
             {% endfor %}
           </select>
-          <br>
-          Reason:
-          <br>
-          <textarea placeholder="What's your reason?" name="reasons"></textarea>
-          <br>
+         <h4> Detailed info: </h4>
+          <textarea class="box" placeholder="Please provide the question number and detailed summary?" name="reasons" rows="4" cols="50"></textarea>
           <button type="submit">Submit</button>
         </form>
       </div>
