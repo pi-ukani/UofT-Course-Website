@@ -880,7 +880,7 @@ footer {
 }
 
 .feed_select {
-  width: 20%;
+  width: auto;
   box-shadow: 1px 2px #0086ea;
   padding: 12px 20px;
   margin: 8px 0;
