@@ -59,8 +59,10 @@
         <div class="table_struct">
         <div id="row_group">
           {% for assignment in data %}
-            <div class="ind_row" align="center"><strong>{{ assignment[0] }}</strong>:> {{assignment[1]}}</div>
+          <div class="student_marks">
+            <div ><strong>{{ assignment[0] }}</strong>:> {{assignment[1]}}</div>
             </br>
+            </div>
           {% endfor %}
         </ul>
       </div>
@@ -75,7 +77,7 @@
             {% endfor %}
           </select>
          <h4> Detailed info: </h4>
-          <textarea class="box" placeholder="Please provide the question number and detailed summary?" name="reasons" rows="4" cols="50"></textarea>
+          <textarea class="box" placeholder="Please provide the question number and detailed summary" name="reasons" rows="8" cols="50"></textarea>
           <button type="submit">Submit</button>
         </form>
       </div>

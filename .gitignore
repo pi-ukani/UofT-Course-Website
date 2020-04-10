@@ -8,3 +8,6 @@ templates/feedback_to_instructor_or.html
 feedback_old.html
 demo.log
 demo.log
+__pycache__/app.cpython-36.pyc
+__pycache__/app.cpython-36.pyc
+.gitignore
