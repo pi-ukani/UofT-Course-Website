@@ -582,17 +582,14 @@ footer {
 .index-main .rs .utsc-logo {
   width: 35%;
   filter: brightness(0) invert(1); /* makes an img white */
-
 }
 .login-form {
   border: 3px solid rgb(24,24,24);
   border-radius: 20px;
   background: rgb(253, 254, 254);
-  width: 50%;
   text-align: center;
   margin: auto;
   margin-top: 2%;
-  height: 60%;
 }
 .login-form form {
   font-size: 1.4rem;
@@ -615,14 +612,30 @@ footer {
 .login-form .login-username, .login-form .login-password {
   margin-top: 5%;
 }
-.login-form .form-container {
-  margin-top: 10%;
+
+#sign-in {
+  font-size: 1rem;
+  background-color: rgb(21, 67, 96);
+  color: #f2f2f2;
+  padding: 1.75%;
+  margin-top: 2%;
+  border-radius: 10px;
 }
 /* for mobile */
-/* for iPad */
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 999px) {
   .index-main .ls {
     display: none;
+  }
+  .login-form {
+    width: 75%;
+    height: 50%;
+  }
+  .index-main {
+    display: flex;
+  }
+  .login-form .form-container {
+    margin-top: 6%;
+    margin-bottom: 35%;
   }
 }
 /* for desktop */
@@ -646,16 +659,15 @@ footer {
     margin-left: 1%;
   }
   .index-main .comp, .index-main .sheeza, .index-main .piyush {
-    text-decoration: none;
-    color: rgb(21, 67, 96);
+    color: rgb(24,24,24);
     font-size: 1.1rem;
   }
   .index-main .comp:hover, .index-main .sheeza:hover, .index-main .piyush:hover {
-    color: rgba(52, 152, 219, 0.5);
+    color: white;
   }
   .index-main .ls {
     font-family: 'Crimson Text', serif;
-    color: rgb(21, 67, 96);
+    color: rgb(24,24,24);
     background-color: rgb(33, 97, 140);
   }
   #course-title-login {
@@ -663,6 +675,7 @@ footer {
     text-shadow: 1px 1px black;
     font-size: 2.5rem;
     text-align: center;
+    color: #F0F3F4;
   }
   #course-title-login:hover {
     text-shadow: 2px 2px black;
@@ -681,12 +694,11 @@ footer {
   .index-main .ls img:hover {
     box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.2);
   }
-  #sign-in {
-    font-size: 1rem;
-    background-color: rgb(21, 67, 96);
-    color: #f2f2f2;
-    padding: 1.75%;
-    margin-top: 2%;
-    border-radius: 10px;
+  .login-form {
+    width: 50%;
+    height: 60%;
+  }
+  .login-form .form-container {
+    margin-top: 10%;
   }
 }
