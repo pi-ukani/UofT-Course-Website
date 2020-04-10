@@ -892,3 +892,8 @@ footer {
   padding-right: 29px;
   direction: rtl;
 }
+
+.nav-buttn.login_button {
+  background-color: seagreen;
+  float: right;
+}
