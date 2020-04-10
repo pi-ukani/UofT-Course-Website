@@ -1,0 +1,79 @@
+/* ASSIGNMENTS */
+/* for mobile */
+/* for iPad */
+@media only screen and (min-width: 1px) {
+  .assn-box .assn-resources a {
+    padding: 1%;
+  }
+  .assn-box nav {
+    margin-top: -1%;
+  }
+  .assn-box .assn-name {
+    margin-bottom: -2%;
+    margin-top: 1%;
+  }
+}
+/* for desktop */
+@media only screen and (min-width: 1000px) {
+  .assn-row {
+    display: flex;
+  }
+  .assn-box {
+    width: 45%;
+  }
+  .assn-box-last {
+    margin-right: 0%;
+  }
+  .assn-box .assn-name {
+    margin-bottom: -5%;
+    margin-top: 1%;
+  }
+  .assn-box nav {
+    margin-top: -3%;
+  }
+  .assn-box .assn-resources a {
+    padding: 2.5%;
+  }
+}
+.assn-row {
+  margin-bottom: 5%;
+}
+.assn-box {
+  border: 1px solid black;
+  margin-right: 10%;
+  padding: 1%;
+  margin-bottom: 2%;
+  box-shadow: 1px 4px 8px 1px rgba(0,0,0,0.2);
+  transition: box-shadow 0.3s ease-in-out 0s;
+}
+.assn-box:hover {
+  box-shadow: 3px 12px 16px 3px rgba(0,0,0,0.2);
+}
+.assn-box .due-item-date {
+  display: inline-block;
+  background-color: rgba(52, 152, 219, 0.5);
+  border-radius: 10px;
+}
+.assn-box input {
+  background-color: rgb(189, 189, 189);
+  padding: 2.5%;
+  font-size: 0.85rem;
+  border-radius: 10px;
+}
+.assn-box input:focus {
+  outline: none;
+  background-color:rgb(224, 224, 224);
+}
+.assn-box .assn-resources {
+  border-top: 1px solid black;
+}
+.assn-box .assn-resources a {
+  text-decoration: none;
+  background-color: rgb(31, 97, 141);
+  color: #f2f2f2;
+  border-radius: 8px;
+}
+.assn-box .assn-resources a:hover {
+  background-color: rgb(52, 152, 219);
+}
+/* ASSIGNMENT END */
