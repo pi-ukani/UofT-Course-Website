@@ -8,32 +8,37 @@ function getFeedback() {
 }
 
 function updateMarks() {
-    master_marks = {
+    modified_grades = {
         "remarks": []
     }
-    $("#resp-table-body .resp-table-row").each(function () {
+    $("#row_group .ind_row").each(function () {
         utorid = $(this).attr("name");
-        marks = $(this).find(".mark-input");
+        marks = $(this).find(".modify_grade");
         if (typeof utorid !== 'undefined') {
             student = {
-                "utorid": utorid
+                "username": utorid
             }
-            curr_stu_marks = {}
+            current_grades = {}
             marks.each(function () {
                 assignment_name = ($(this).attr("name"));
                 assignment_mark = ($(this).val());
-                curr_stu_marks[assignment_name] = assignment_mark
+                current_grades[assignment_name] = assignment_mark
             });
-            student["marks"] = curr_stu_marks
-            master_marks["remarks"].push(student)
+            student["marks"] = current_grades
+            modified_grades["remarks"].push(student)
+
         }
+
     });
 
     $.ajax({
         url: "/remark",
         type: "POST",
-        data: JSON.stringify(master_marks),
+        data: JSON.stringify(modified_grades),
         contentType: "application/json",
-    });
-
+        success: function () {
+            location.reload();
+            alert('Grades updated please refresh the page');
+        }
+    })
 }

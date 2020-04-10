@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>CSCB20 | UTSC</title>
   <link rel="stylesheet" href="../static/css/index.css">
+  <link rel="stylesheet" href="../static/css/index2.css">
   <link rel="shortcut icon" href="../static/photos/UofT_tree_with_colours.png" type="image/x-icon">
 
 
@@ -13,11 +14,11 @@
 <body>
   <div class="main-nav" id="main-nav-id">
     <a class="nav-title" href="index">CSCB20</a>
-    <a class="nav-buttn" href="yourinfo">Dashboard</a></a>
+    <a class="nav-buttn" href="yourinfo">Dashboard</a>
     <a class="nav-buttn" href="assignments">Assignments</a>
     <a class="nav-buttn" href="https://www.piazza.com">Piazza</a>
     <a class="nav-buttn" href="https://markus.utsc.utoronto.ca">Markus</a>
-    <a class="nav-buttn"href="feedback">Feedback</a>
+    <a class="nav-buttn" href="feedback">Feedback</a>
     <a class="nav-buttn" href="syllabus">Syllabus</a>
     <a class="nav-buttn" href="labs">Labs</a>
     <a class="nav-buttn" href="course-team">Course Team</a>
@@ -44,14 +45,14 @@
 
 
 
-  <div class="main-page">
-   <h1><strong>Dashboard!</strong></h1>
-         <h3>Welcome {{name}}!</h3>
-       </div>
-    </div>
+  <div class="page-container">
+   <h1 id="labs-page-title"><strong>Dashboard!</strong></h1>
+         <h3 id="labs-page-title">Welcome {{name}}!</h3>
+      
+    
 
-    <div class="container-2">
-      <div class="template">
+    <div class="lab-weeks">
+      <div class="lab-week">
         <h1>Your Marks</h1>
         <ul>
           {% for assignment in data %}
@@ -59,7 +60,7 @@
           {% endfor %}
         </ul>
       </div>
-      <div class="template">
+      <div class="lab-week">
         <h1>Remark Request</h1>
         <form action="/remark" method="post">
           Assignment:
