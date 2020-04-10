@@ -4,119 +4,120 @@
 <head>
   <meta charset="utf-8">
   <title>CSCB20 | UTSC</title>
-  <link rel="stylesheet" href="../static/css/index.css">
-  <link rel="shortcut icon" href="../static/photos/UofT_tree_with_colours.png" type="image/x-icon">
-
-
+  <link rel="stylesheet" href="/../static/css/index2.css">
+  
 </head>
 
 <body>
   <div class="main-nav" id="main-nav-id">
-    <a class="nav-title" href="index">CSCB20</a>
-    <a class="nav-buttn" href="yourinfo">Dashboard</a></a>
-    <a class="nav-buttn" href="assignments">Assignments</a>
-    <a class="nav-buttn" href="https://www.piazza.com">Piazza</a>
+    <a class="nav-title" href="index.html">CSCB20</a>
+    <a class="nav-buttn" href="latest-news.html">Latest News</a>
+    <a class="nav-buttn" href="assignments.html">Assignments</a>
+    <a class="nav-buttn" href="https://piazza.com/">Piazza</a>
     <a class="nav-buttn" href="https://markus.utsc.utoronto.ca">Markus</a>
-    <a class="nav-buttn"href="feedback">Feedback</a>
-    <a class="nav-buttn" href="syllabus">Syllabus</a>
-    <a class="nav-buttn" href="labs">Labs</a>
-    <a class="nav-buttn" href="course-team">Course Team</a>
-    <a class="nav-buttn" href="calender">Calender</a>
-    <a class="nav-buttn login_button" id="login_button" href="{{login_button}}">{{login_button}}</a>
+    <a class="nav-buttn" href="feedback.html">Anon Feedback</a>
+    <a class="nav-buttn" href="syllabus.html">Syllabus</a>
+    <a class="nav-buttn" href="labs.html">Labs</a>
+    <a class="nav-buttn" href="course-team.html">Course Team</a>
+    <a class="nav-buttn" href="calender.html">Calender</a>
     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">
-      <div class=" bar"></div>
+      <div class="bar"></div>
       <div class="bar"></div>
       <div class="bar"></div>
     </a>
   </div>
-
-
   <script>
     function myFunction() {
-        var x = document.getElementById("main-nav-id");
-        if (x.className === "main-nav") {
-            x.className += " responsive";
-        } else {
-            x.className = "main-nav";
-        }
-    } 
-    </script>
+      var x = document.getElementById("main-nav-id");
+      if (x.className === "main-nav") {
+        x.className += " responsive";
+      } else {
+        x.className = "main-nav";
+      }
+    }
+  </script>
+  <div class="spacer">
+    &nbsp;
+  </div>
 
 
 
-  <div class="main-page">
-<div class="page-container">
- <div class="form_container">
-        <h2>Your opinion matters!</h2>
-        <strong>
+  <div class="page-container">
+    <div class="form_container">
+      <h2>Your opinion matters!</h2>
+      <strong>
         <ul>
           <li>What do you like about the instructor teaching?</li>
           <li>What do you recommend the instructor to do to improve their teaching?</li>
           <li>What do you like about the labs?</li>
           <li>What do you recommend the lab instructors to do to improve their lab teaching?</li>
         </ul>
-        </strong>
-      </div>
+      </strong>
+    </div>
 
     <h1 id="feedback-page-title">Anonymous Feedback</h1>
     <h4>Instructor:</h4>
-          <select id="instructor-options" >
-            {% for instructor in data %}
-              <option name="{{instructor[1]}}">{{instructor[0]}}</option>
-            {% endfor %}
-          </select>
-    <p>We take our feedback very seriously and ecourage you to write honest, detailed feedback that have a 100%
+    <select id="instructor-options">
+      {% for instructor in data %}
+      <option name="{{instructor[1]}}">{{instructor[0]}}</option>
+      {% endfor %}
+    </select>
+    <p>We take your feedback very seriously and ecourage you to write honest, detailed feedback that have a 100%
       anonymity guaranteed. Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
     <form onsubmit="getFeedback()">
+      <!-- <div class="feedback-page-email">
+        <label for="optional-email">Enter your email here if you would like a response back:</label>
+        <input type="text" name="optional-email" id="optional-email" placeholder="john.smith@gmail.com">
+      </div> -->
       <div class="feedback-page-feedback">
         <label for="feedback"></label>
-        <textarea name="feedback" id="feedback-text" rows="20" cols="91"
+        <textarea name="feedback" id="feedback-text" rows="20" cols="69"
           placeholder="Write your feedback here..."></textarea>
       </div>
       <input id="feedback-submit" type="submit" value="Submit">
     </form>
   </div>
-     
-  </div>
 
   <footer>
     <div class="footer-nav">
       <div class="footer-title">
-        <h1>CSCB20</h1>
+        <h1 id="footer-course-title">CSCB20</h1>
         <h1>Introduction to Databases and Web Applications</h1>
-        <a class="comp" href="https://www.utsc.utoronto.ca/cms/computer-science-1">Department of Computer Science at
+        <a id="comp" href="https://www.utsc.utoronto.ca/cms/computer-science-1">Department of Computer Science at
           UofT</a>
       </div>
       <div class="footer-section">
         <h3>Course Content</h3>
         <ul>
-          <li><a href="#">Latest News</a></li>
-          <li><a href="#">Assignments</a></li>
-          <li><a href="#">Labs</a></li>
+          <li><a href="latest-news.html">Latest News</a></li>
+          <li><a href="assignments.html">Assignments</a></li>
+          <li><a href="labs.html">Labs</a></li>
         </ul>
       </div>
       <div class="footer-section">
         <h3>Resources</h3>
         <ul>
-          <li><a href="#">Syllabus</a></li>
-          <li><a href="#">Piazza</a></li>
-          <li><a href="#">Markus</a></li>
+          <li><a href="syllabus.html">Syllabus</a></li>
+          <li><a href="https://piazza.com/">Piazza</a></li>
+          <li><a href="https://markus.utsc.utoronto.ca/">Markus</a></li>
         </ul>
       </div>
-      <div class="footer-section last-footer-section">
+      <div class="footer-section">
         <h3>Contact Us</h3>
         <ul>
           <li><a href="course-team.html">Course Team</a></li>
-          <li><a href="#">Anon Feedback</a></li>
+          <li><a href="feedback.html">Anon Feedback</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>By Sheeza Aziz and Piyush Ukni</p>
+      <p>Made with ☕ By <a id="sheeza" href="https://www.linkedin.com/in/sheeza-aziz/">Sheeza Aziz</a> and <a
+          id="piyush" href="#">Piyush Ukni</a></p>
       <p>CSCB20H3 Winter 2020</p>
     </div>
   </footer>
-
+  <script src="../static/js/jquery.js"></script>
+<script src="../static/js/java.js"></script>
 </body>
 
 </html>
