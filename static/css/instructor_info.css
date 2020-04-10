@@ -23,7 +23,7 @@
 .modify_grade {
     height: 40%;
     width: 60%;
-    border-radius: 5px;
+    border-radius: 3px;
     box-shadow: 1px 2px #0086ea;
     border: 1px solid black;
     text-align: center;
@@ -174,4 +174,5 @@ button {
     display: inline-block;
     border-radius: 5px;
     font-size: 2vw;
+    width: auto;
 }
