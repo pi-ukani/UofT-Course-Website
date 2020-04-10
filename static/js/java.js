@@ -5,8 +5,7 @@ function myFunction() {
     } else {
         x.className = "main-nav";
     }
-} <
-/script>
+}
 
 function getFeedback() {
     let utorID = $("#instructor-options option:selected").attr("name");
