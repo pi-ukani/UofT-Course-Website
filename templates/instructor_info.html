@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>CSCB20 | UTSC</title>
-  <link rel="stylesheet" href="../static/css/index.css">
+  <!-- <link rel="stylesheet" href="../static/css/index.css"> -->
   <link rel="stylesheet" href="../static/css/index2.css">
-  <link rel="stylesheet" href="../static/css/a3_pages.css">
+  <link rel="stylesheet" href="../static/css/instructor_info.css">
   <link rel="shortcut icon" href="../static/photos/UofT_tree_with_colours.png" type="image/x-icon">
 
 
@@ -33,34 +33,66 @@
   </div>
 
 
+<<<<<<< HEAD
 
 
   <div class="page-container">
          <h1 id="labs-page-title"><strong>Dashboard</strong></h1>
          <h3 id="labs-page-title">Welcome {{name}}!</h3>
+=======
+  <script>
+    function myFunction() {
+      var x = document.getElementById("main-nav-id");
+      if (x.className === "main-nav") {
+        x.className += " responsive";
+      } else {
+        x.className = "main-nav";
+      }
+    }
+  </script>
+
+
+
+  <div class="page-container">
+    <h1 id="labs-page-title"><strong>Dashboard</strong></h1>
+    <h3 id="labs-page-title">Welcome {{name}}!</h3>
+>>>>>>> 83a75987341850eb71efaff4087d1ea718d447c3
 
 
     <div class="lab-weeks">
       <div class="lab-week">
         <h1>Student Marks</h1>
         <div class="table_struct">
-          <div class="table_cell"><h4>Username</h4></div>
-          <div class="table_cell"><h4>A1</h4></div>
-          <div class="table_cell"><h4>A2</h4></div>
-          <div class="table_cell"><h4>A3</h4></div>
-          <div class="table_cell"><h4>Midterm</h4></div>
-          <div class="table_cell"><h4>Final</h4></div>
+          <div class="table_cell">
+            <h4>Username</h4>
+          </div>
+          <div class="table_cell">
+            <h4>A1</h4>
+          </div>
+          <div class="table_cell">
+            <h4>A2</h4>
+          </div>
+          <div class="table_cell">
+            <h4>A3</h4>
+          </div>
+          <div class="table_cell">
+            <h4>Midterm</h4>
+          </div>
+          <div class="table_cell">
+            <h4>Final</h4>
+          </div>
 
           <div id="row_group">
             {% for item in data %}
-              <div class="ind_row" name="{{item[0]}}">
-                <div class="table_cell">{{item[0]}}</div>
-                <div class="table_cell"><input class="modify_grade" type="number" name="a1" value="{{item[1]}}"></div>
-                <div class="table_cell"><input class="modify_grade" type="number" name="a2" value="{{item[2]}}"></div>
-                <div class="table_cell"><input class="modify_grade" type="number" name="a3" value="{{item[3]}}"></div>
-                <div class="table_cell"><input class="modify_grade" type="number" name="midterm" value="{{item[4]}}"></div>
-                <div class="table_cell"><input class="modify_grade" type="number" name="final" value="{{item[5]}}"></div>
+            <div class="ind_row" name="{{item[0]}}">
+              <div class="table_cell">{{item[0]}}</div>
+              <div class="table_cell"><input class="modify_grade" type="number" name="a1" value="{{item[1]}}"></div>
+              <div class="table_cell"><input class="modify_grade" type="number" name="a2" value="{{item[2]}}"></div>
+              <div class="table_cell"><input class="modify_grade" type="number" name="a3" value="{{item[3]}}"></div>
+              <div class="table_cell"><input class="modify_grade" type="number" name="midterm" value="{{item[4]}}">
               </div>
+              <div class="table_cell"><input class="modify_grade" type="number" name="final" value="{{item[5]}}"></div>
+            </div>
             {% endfor %}
           </div>
 
@@ -75,16 +107,22 @@
         <h1>Remark Requests</h1>
         <div class="table_struct">
 
-          <div class="table_cell"><h4>Username</h4></div>
-          <div class="table_cell"><h4>Assignment</h4></div>
-          <div class="table_cell"><h4>Reason</h4></div>
+          <div class="table_cell">
+            <h4>Username</h4>
+          </div>
+          <div class="table_cell">
+            <h4>Assignment</h4>
+          </div>
+          <div class="table_cell">
+            <h4>Reason</h4>
+          </div>
           <div id="row_group">
             {% for item in remarks %}
-              <div class="ind_row">
-                <div class="table_cell">{{item[0]}}</div>
-                <div class="table_cell">{{item[1]}}</div>
-                <div class="table_cell">{{item[2]}}</div>
-              </div>
+            <div class="ind_row">
+              <div class="table_cell">{{item[0]}}</div>
+              <div class="table_cell">{{item[1]}}</div>
+              <div class="table_cell">{{item[2]}}</div>
+            </div>
             {% endfor %}
           </div>
         </div>
@@ -99,8 +137,8 @@
       <p>CSCB20H3 Winter 2020</p>
     </div>
   </footer>
-<script src="../static/js/jquery.js"></script>
-<script src="../static/js/java.js"></script>
+  <script src="../static/js/jquery.js"></script>
+  <script src="../static/js/java.js"></script>
 </body>
 
 </html>
