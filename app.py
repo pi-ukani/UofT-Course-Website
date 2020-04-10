@@ -24,7 +24,7 @@ def logged_in():
 def index():
     if not logged_in():
         return redirect(url_for("Login"))
-    return redirect(url_for("index"))
+    return redirect(url_for("yourinfo"))
 
 
 @app.route("/Logout")
