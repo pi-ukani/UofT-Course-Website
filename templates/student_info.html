@@ -35,49 +35,47 @@
 
   <script>
     function myFunction() {
-        var x = document.getElementById("main-nav-id");
-        if (x.className === "main-nav") {
-            x.className += " responsive";
-        } else {
-            x.className = "main-nav";
-        }
-    } 
-    </script>
+      var x = document.getElementById("main-nav-id");
+      if (x.className === "main-nav") {
+        x.className += " responsive";
+      } else {
+        x.className = "main-nav";
+      }
+    }
+  </script>
 
 
 
   <div class="page-container">
-   <h1 id="labs-page-title"><strong>Dashboard!</strong></h1>
-         <h3 id="labs-page-title">Welcome {{name}}!</h3>
-      
-    
+    <h1 id="labs-page-title"><strong>Dashboard:</strong></h1>
+    <h3 id="labs-page-title">Welcome {{name}}!</h3>
+
+
 
     <div class="lab-weeks">
       <div class="lab-week">
         <h2 align="center">Your Marks</h2>
-        <ul>
-        <div class="table_struct">
-        <div id="row_group">
-          {% for assignment in data %}
-          <div class="student_marks">
-            <div ><strong>{{ assignment[0] }}</strong>:> {{assignment[1]}}</div>
-            </br>
-            </div>
-          {% endfor %}
-        </ul>
+
+        {% for assignment in data %}
+        <div class="student_marks">
+          <div><strong>{{ assignment[0] }}</strong>:- {{assignment[1]}}</div>
+          </br>
+        </div>
+        {% endfor %}
       </div>
-     
+
       <div class="lab-resources">
         <h2>Remark Request</h2>
         <form action="/remark" method="post">
-         <h4> Assignment:</h4>
+          <h4> Assignment:</h4>
           <select name="assignment">
             {% for assignment in data %}
-              <option>{{ assignment[0] }}</option>
+            <option>{{ assignment[0] }}</option>
             {% endfor %}
           </select>
-         <h4> Detailed info: </h4>
-          <textarea class="box" placeholder="Please provide the question number and detailed summary" name="reasons" rows="8" cols="50"></textarea>
+          <h4> Detailed info: </h4>
+          <textarea class="box" placeholder="Please provide the question number and detailed summary" name="reasons"
+            rows="8" cols="50"></textarea>
           <button type="submit">Submit</button>
         </form>
       </div>
