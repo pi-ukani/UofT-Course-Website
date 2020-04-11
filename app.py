@@ -218,11 +218,11 @@ def feedback():
 
         elif request.method == "POST":
             student_id = session["username"]
-            instructor_id = request.form["instructor_id"]
-            feedback1 = request.form["feedback1"]
-            feedback2 = request.form["feedback2"]
-            feedback3 = request.form["feedback3"]
-            feedback4 = request.form["feedback4"]
+            instructor_id = request.json["instructor_id"]
+            feedback1 = request.json["feedback1"]
+            feedback2 = request.json["feedback2"]
+            feedback3 = request.json["feedback3"]
+            feedback4 = request.json["feedback4"]
             sql = "INSERT INTO feedback VALUES ('{}', '{}', '{}', '{}', '{}', '{}')".format(
                 instructor_id, student_id, feedback1, feedback2, feedback3, feedback4
             )

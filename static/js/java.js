@@ -14,14 +14,36 @@ function getFeedback() {
     let feedback3 = $("#feedback-text3").val();
     let feedback4 = $("#feedback-text4").val();
 
+    console.log("sending feedback via post...");
+    console.log(feedback1);
+    console.log(feedback2);
+    console.log(feedback3);
+    console.log(feedback4);
 
-    $.post("/feedback", {
-        instructor_id: utorID,
-        feedback1: feedback1,
-        feedback2: feedback2,
-        feedback3: feedback3,
-        feedback4: feedback4,
-    });
+    $.ajax({
+        url: "/feedback",
+        type: "POST",
+        data: JSON.stringify({
+          "instructor_id": utorID,
+          "feedback1": feedback1,
+          "feedback2": feedback2,
+          "feedback3": feedback3,
+          "feedback4": feedback4,
+        }),
+        contentType: "application/json",
+        success: function () {
+            location.reload();
+            alert('Feedback submitted.');
+        }
+    })
+
+    // $.post("/feedback", {
+    //     "instructor_id": utorID,
+    //     "feedback1": feedback1,
+    //     "feedback2": feedback2,
+    //     "feedback3": feedback3,
+    //     "feedback4": feedback4,
+    // });
 }
 
 function updateMarks() {
