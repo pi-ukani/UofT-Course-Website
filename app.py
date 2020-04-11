@@ -237,7 +237,12 @@ def feedback():
         query_results = db.engine.execute(text(sql))
         feedback = []
         for result in query_results:
-            feedback.append((result["student_id"], result["feedback"]))
+            f1 = result["feedback1"] if result["feedback1"] != None else ""
+            f2 = result["feedback2"] if result["feedback2"] != None else ""
+            f3 = result["feedback3"] if result["feedback3"] != None else ""
+            f4 = result["feedback4"] if result["feedback4"] != None else ""
+
+            feedback.append((result["student_id"], f1, f2, f3, f4))
 
         return render_template("feedback_from_student.html", data=feedback, login_button="Logout")
 
