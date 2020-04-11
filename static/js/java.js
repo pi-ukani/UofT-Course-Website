@@ -9,10 +9,18 @@ function myFunction() {
 
 function getFeedback() {
     let utorID = $("#instructor-options option:selected").attr("name");
-    let feedback = $("#feedback-text").val();
+    let feedback1 = $("#feedback-text1").val();
+    let feedback2 = $("#feedback-text2").val();
+    let feedback3 = $("#feedback-text3").val();
+    let feedback4 = $("#feedback-text4").val();
+
+
     $.post("/feedback", {
         instructor_id: utorID,
-        feedback: feedback
+        feedback1: feedback1,
+        feedback2: feedback2,
+        feedback3: feedback3,
+        feedback4: feedback4,
     });
 }
 
