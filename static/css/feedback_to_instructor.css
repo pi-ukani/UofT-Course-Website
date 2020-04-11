@@ -1,4 +1,4 @@
-.feed_button {
+/* .feed_button {
     width: 15%;
     background-color: seagreen;
     border: solod 1px black;
@@ -23,4 +23,35 @@
     text-align-last: center;
     padding-right: 29px;
     direction: rtl;
+} */
+#feedback-submit {
+  padding: 1%;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  background-color: rgb(208, 211, 212);
+  box-shadow: 1px 1px 5px #888888;
+}
+#feedback-submit:hover {
+  box-shadow: 1px 1px 10px #888888;
+}
+select {
+  background-color: rgb(41, 128, 185);
+  color: white;
+  border: 1px solid black;
+  font-size: 1.1rem;
+}
+textarea {
+  padding: 1%;
+  width: 80%;
+  font-size: 1.1rem;
+}
+textarea:focus {
+  border: 1px solid black;
+  outline: none;
+}
+.feedback-page-feedback {
+  margin-bottom: 2%;
+}
+form {
+  margin-bottom: 2%;
 }

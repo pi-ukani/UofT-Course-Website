@@ -4,8 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>CSCB20 | UTSC</title>
-  <link rel="stylesheet" href="/../static/css/feedback_to_instructor.css">
   <link rel="stylesheet" href="../static/css/the-actual-index.css">
+  <link rel="stylesheet" href="../static/css/feedback_to_instructor.css">
+
 
 </head>
 
@@ -44,20 +45,28 @@
       {% endfor %}
     </select>
     <p>We take your feedback very seriously and ecourage you to write honest, detailed feedback that have a 100%
-      anonymity guaranteed!</p>
+      anonymity guaranteed.</p>
 
-    <h2>Try to answer questions such as:</h2>
-    <p>
-      <li>What do you like about the instructor teaching?
-      <li>What do you recommend the instructor to do to improve their teaching?
-      <li>What do you like about the labs?
-      <li>What do you recommend the lab instructors to do to improve their lab teaching?
-    </p>
-
+    <h2>Please enter feedback about the following questions:</h2>
     <form onsubmit="getFeedback()">
       <div class="feedback-page-feedback">
-        <label for="feedback"></label>
-        <textarea name="feedback" id="feedback-text" rows="20" cols="69"
+        <label for="feedback1">What do you like about the instructor teaching?</label><br>
+        <textarea name="feedback1" id="feedback1" rows="5" cols="100"
+          placeholder="Write your feedback here..."></textarea>
+      </div>
+      <div class="feedback-page-feedback">
+        <label for="feedback2">What do you recommend the instructor to do to improve their teaching?</label><br>
+        <textarea name="feedback2" id="feedback2" rows="5" cols="100"
+          placeholder="Write your feedback here..."></textarea>
+      </div>
+      <div class="feedback-page-feedback">
+        <label for="feedback3">What do you like about the labs?</label><br>
+        <textarea name="feedback3" id="feedback3" rows="5" cols="100"
+          placeholder="Write your feedback here..."></textarea>
+      </div>
+      <div class="feedback-page-feedback">
+        <label for="feedback4">What do you recommend the lab instructors to do to improve their lab teaching?</label><br>
+        <textarea name="feedback4" id="feedback4" rows="5" cols="100"
           placeholder="Write your feedback here..."></textarea>
       </div>
       <input id="feedback-submit" class="feed_button" type="submit" value="Submit">
