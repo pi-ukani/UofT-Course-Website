@@ -43,13 +43,14 @@
   margin-top: 5%;
 }
 
-#sign-in {
+.signin-btn {
   font-size: 1rem;
   background-color: rgb(21, 67, 96);
   color: #f2f2f2;
   padding: 1.75%;
   margin-top: 2%;
   border-radius: 10px;
+  margin-bottom: 1%;
 }
 #incorrect-login {
   margin-top: 0%;
@@ -69,7 +70,7 @@
   }
   .login-form .form-container {
     margin-top: 6%;
-    margin-bottom: 35%;
+    margin-bottom: 50%;
   }
 }
 /* for desktop */
@@ -135,5 +136,11 @@
   .login-form .form-container {
     margin-top: 10%;
   }
+}
+
+select {
+  background-color: rgb(41, 128, 185);
+  color: white;
+  font-size: 1.1rem;
 }
 /* LOGIN PAGE END */
