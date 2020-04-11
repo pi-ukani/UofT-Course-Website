@@ -2,6 +2,7 @@ from flask import Flask, request, render_template, url_for, escape, session, red
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.sql import text
 import logging
+import json
 
 app = Flask(__name__)
 app.secret_key = "this_is_a_secret_dont_reveal"
@@ -227,7 +228,7 @@ def feedback():
                 instructor_id, student_id, feedback1, feedback2, feedback3, feedback4
             )
             db.engine.execute(text(sql).execution_options(autocommit=True))
-            return redirect(url_for("feedback"))
+            return json.dumps({'success':True}), 200, {'ContentType':'application/json'}
 
     elif user_type == "instructor":
         sql = "SELECT * FROM feedback WHERE instructor_id='{}'".format(
