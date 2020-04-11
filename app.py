@@ -219,9 +219,12 @@ def feedback():
         elif request.method == "POST":
             student_id = session["username"]
             instructor_id = request.form["instructor_id"]
-            feedback = request.form["feedback"]
-            sql = "INSERT INTO feedback VALUES ('{}', '{}', '{}')".format(
-                instructor_id, student_id, feedback
+            feedback1 = request.form["feedback1"]
+            feedback2 = request.form["feedback2"]
+            feedback3 = request.form["feedback3"]
+            feedback4 = request.form["feedback4"]
+            sql = "INSERT INTO feedback VALUES ('{}', '{}', '{}', '{}', '{}', '{}')".format(
+                instructor_id, student_id, feedback1, feedback2, feedback3, feedback4
             )
             db.engine.execute(text(sql).execution_options(autocommit=True))
             return redirect(url_for("feedback"))

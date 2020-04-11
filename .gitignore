@@ -1,7 +1,6 @@
+assignment3.db
 bak/
 venv/
-app.py
-assignment3.db
 __pycache__/
 templates/feedback_from_student_bak.html
 templates/feedback_to_instructor_or.html
