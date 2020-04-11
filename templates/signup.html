@@ -4,109 +4,69 @@
 <head>
   <meta charset="utf-8">
   <title>CSCB20 | UTSC</title>
-  <link rel="stylesheet" href="../static/css/index.css">
   <link rel="shortcut icon" href="../static/photos/UofT_tree_with_colours.png" type="image/x-icon">
-
-  <link rel="stylesheet" href="../static/css/a3_pages.css">
-
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,600&family=Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../static/css/login.css">
+  <link rel="stylesheet" href="../static/css/signup.css">
+  <link rel="stylesheet" href="../static/css/the-actual-index.css">
 </head>
 
 <body>
-  <div class="main-nav" id="main-nav-id">
-    <a class="nav-title" href="index">CSCB20</a>
-    <!-- <a class="nav-buttn" href="index">Home</a>
-<a class="nav-buttn" href="yourinfo">Dashboard</a>
-    <a class="nav-buttn" href="assignments">Assignments</a>
-    <a class="nav-buttn" href="https://www.piazza.com">Piazza</a>
-    <a class="nav-buttn" href="https://markus.utsc.utoronto.ca">Markus</a>
-    <a class="nav-buttn" href="feedback">Feedback</a>
-    <a class="nav-buttn" href="syllabus">Syllabus</a>
-    <a class="nav-buttn" href="labs">Labs</a>
-    <a class="nav-buttn" href="course-team">Course Team</a>
-    <a class="nav-buttn" href="calender">Calender</a> -->
-    <a class="nav-buttn login_button" id="login_button" href="{{login_button}}">{{login_button}}</a>
-    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">
-      <div class=" bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
-    </a>
+  <div class="index-container">
+    <div class="index-main">
+      <div class="ls">
+        <h1 id="course-title-login">CSCB20 Winter 2020: Introduction to Databases and Web Applications</h1>
+        <div class="imgs-row">
+          <img src="../static/photos/sigma-symbol.png" alt="relational algebra symbol">
+          <img src="../static/photos/sql-symbol.png" alt="relational algebra symbol">
+          <img src="../static/photos/python-symbol.png" alt="relational algebra symbol">
+          <img src="../static/photos/web-dev-symbol.png" alt="relational algebra symbol">
+        </div>
+        <div class="footer-row">
+          <p>Made with ☕ By <a class="piyush" href="#">Piyush Ukni</a> and <a class="sheeza" href="https://www.linkedin.com/in/sheeza-aziz/">Sheeza Aziz</a></p>
+          <p><a class="comp" href="https://www.utsc.utoronto.ca/cms/computer-science-1">Department of Computer Science at
+                    UofT</a></p>
+        </div>
+      </div>
+      <div class="rs">
+        <div class="utsc-logo-container">
+          <img class="utsc-logo" src="../static/photos/utsc-logo.png" alt="utsc logo">
+        </div>
+        <div class="login-form">
+          <form action="/signup" method="post">
+            <div class="form-container">
+              <div class="account-type">
+                <label for="acct-type">Account Type:</label><br>
+                <select id="acct-type" name="user_type">
+                  <option>Student</option>
+                  <option>Instructor</option>
+                </select>
+              </div>
+              <div class="login-name">
+                <label for="name-login">Name:</label>
+                <br>
+                <input type="text" id="name-login" name="name" placeholder="John Smith">
+              </div>
+              <div class="login-username">
+                <label for="username-login">Username:</label>
+                <br>
+                <input type="text" id="username-login" name="username" placeholder="smithjohn">
+              </div>
+              <div class="login-password">
+                <label for="password-login">Password:</label>
+                <br>
+                <input type="password" id="password-login" name="password" placeholder="********">
+              </div>
+              <button class="signin-btn" type="submit">Submit</button>
+              <button class="signin-btn" type="button" onclick="location.href='Login'">Login</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
 
-
-
-
-
-  <div class="main-page">
-    <div class="title-pic">
-      <!-- Photo by Paweł Czerwiński on Unsplash -->
-      <h1 align="center" class="main-title">CSCB20 - Introduction to Databases and Web Applications</h1>
-      <h1 align="center" class="main-title">Winter 2020</h1>
-      <h3 align="center" class="main-title">Register to access grades, remarking service and feedback</h3>
-    </div>
-    <div class="form_container">
-      <div class="login form">
-        <form action="/signup" method="post">
-
-          <h2>-:Account Type:-</h2>
-          <select name="user_type">
-            <option>Student</option>
-            <option>Instructor</option>
-          </select>
-
-          <h2>-:Your Name:-</h2>
-          <input type="text" name="name">
-
-          <h2>-:Username:-</h2>
-          <input type="text" name="username">
-
-          <h2>-:Password:-</h2>
-          <input type="password" name="password">
-
-          <button type="submit">Submit</button>
-          <button type="button" onclick="location.href='Login'">Login</button>
-        </form>
-      </div>
-    </div>
-
-  </div>
-
-  <footer>
-    <div class="footer-nav">
-      <div class="footer-title">
-        <h1>CSCB20</h1>
-        <h1>Introduction to Databases and Web Applications</h1>
-        <a class="comp" href="https://www.utsc.utoronto.ca/cms/computer-science-1">Department of Computer Science at
-          UofT</a>
-      </div>
-      <div class="footer-section">
-        <h2>Course Content</h2>
-        <ul>
-          <li><a href="#">Latest News</a></li>
-          <li><a href="#">Assignments</a></li>
-          <li><a href="#">Labs</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h2>Resources</h2>
-        <ul>
-          <li><a href="#">Syllabus</a></li>
-          <li><a href="#">Piazza</a></li>
-          <li><a href="#">Markus</a></li>
-        </ul>
-      </div>
-      <div class="footer-section last-footer-section">
-        <h2>Contact Us</h2>
-        <ul>
-          <li><a href="course-team.html">Course Team</a></li>
-          <li><a href="#">Anon Feedback</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>By Sheeza Aziz and Piyush Ukni</p>
-      <p>CSCB20h2 Winter 2020</p>
-    </div>
-  </footer>
 <script src="../static/js/jquery.js"></script>
   <script src="../static/js/java.js"></script>
 </body>
