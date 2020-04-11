@@ -12,3 +12,4 @@ __pycache__/app.cpython-36.pyc
 __pycache__/app.cpython-36.pyc
 .gitignore
 __pycache__/app.cpython-36.pyc
+templates/index_old.html
