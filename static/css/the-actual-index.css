@@ -117,7 +117,7 @@ a:hover {
   }
 
   .main-nav.responsive {
-    position: absolute;
+    position: fixed;
   }
 
   .main-nav.responsive .icon {

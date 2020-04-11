@@ -4,11 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>CSCB20 | UTSC</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700&display=swap" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="../static/css/index2.css"> -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="../static/css/the-actual-index.css">
-  <link rel="stylesheet" href="../static/css/labs.css">
-  <link rel="stylesheet" href="../static/css/index2.css">
   <link rel="stylesheet" href="../static/css/feedback_from_student.css">
 </head>
 
@@ -16,7 +14,7 @@
   <div class="main-nav" id="main-nav-id">
     <a class="nav-title" href="index">CSCB20</a>
     <a class="nav-buttn" href="index">Home</a>
-<a class="nav-buttn" href="yourinfo">Dashboard</a>
+    <a class="nav-buttn" href="yourinfo">Dashboard</a>
     <a class="nav-buttn" href="assignments">Assignments</a>
     <a class="nav-buttn" href="https://www.piazza.com">Piazza</a>
     <a class="nav-buttn" href="https://markus.utsc.utoronto.ca">Markus</a>
@@ -38,16 +36,16 @@
 
   <div class="page-container">
 
- <div class="feed_boxs">
+    <div class="feed_boxs">
       <div class="feed_box">
-      <h1>Feedback from Students:</h1>
-          {% for feedback in data %}
-          <div class="student_feed">
-         {{feedback[1]}}
-         </div>
-          {% endfor %}
+        <h1>Feedback from Students:</h1>
+        {% for feedback in data %}
+        <div class="student_feed">
+          {{feedback[1]}}
+        </div>
+        {% endfor %}
       </div>
-  </div>
+    </div>
   </div>
 
 
@@ -60,13 +58,16 @@
         <a id="comp" href="https://www.utsc.utoronto.ca/cms/computer-science-1">Department of Computer Science at
           UofT</a>
       </div>
-    <div class="footer-bottom">
-      <p>Made with ☕ By <a id="sheeza" href="https://www.linkedin.com/in/sheeza-aziz/">Sheeza Aziz</a> and <a id="piyush" href="#">Piyush Ukni</a></p>
-      <p>CSCB20H3 Winter 2020</p>
+      <div class="footer-bottom">
+        <p>Made with ☕ By <a id="sheeza" href="https://www.linkedin.com/in/sheeza-aziz/">Sheeza Aziz</a> and <a
+            id="piyush" href="#">Piyush Ukni</a></p>
+        <p>CSCB20H3 Winter 2020</p>
+      </div>
     </div>
-  </div>
   </footer>
 
 </body>
+<script src="../static/js/jquery.js"></script>
+<script src="../static/js/java.js"></script>
 
 </html>
