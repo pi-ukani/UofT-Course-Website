@@ -1,182 +1,39 @@
+button {
+  padding: 2%;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  background-color: rgb(208, 211, 212);
+  box-shadow: 1px 1px 5px #888888;
+  width: 100%;
+}
+button:hover {
+  box-shadow: 1px 1px 10px #888888;
+}
 /* table structure */
+/* bc we are not allowed to use tables in a3 as per @285 on piazza */
 .table_struct {
     width: 100%;
     display: table;
 }
-
 .table_cell {
     display: table-cell;
     padding: 1%;
     text-align: center;
 }
-
 #row_group {
     display: table-row-group;
-
 }
-
 .ind_row {
     display: table-row;
-
 }
-
 .modify_grade {
     height: 40%;
     width: 60%;
     border-radius: 3px;
-    box-shadow: 1px 2px #0086ea;
+    box-shadow: 1px 1px 5px rgb(174, 214, 241);
     border: 1px solid black;
     text-align: center;
-    align-items: center;
     padding: 10%;
     font-size: 1rem;
     margin-top: 1%;
-}
-
-.grades_size {
-    font-size: 1rem;
-}
-
-.box {
-    width: 98%;
-    border-radius: 2%;
-    box-shadow: 2px 2px #0086ea;
-}
-
-/* LABS */
-.lab-week,
-.lab-resources {
-    border-radius: 5px;
-    box-shadow: 1px 2px #0086ea;
-    border: 1px solid black;
-    padding: 1%;
-    background-color: white;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    width: 100%;
-}
-
-.lab-week h2 {
-    margin-bottom: 1%;
-}
-
-.lab-week-date {
-    background-color: rgba(52, 152, 219, 0.5);
-    border-radius: 10px;
-}
-
-.lab-resources a {
-    text-decoration: none;
-    background-color: rgb(31, 97, 141);
-    color: #f2f2f2;
-    padding: 1%;
-    border-radius: 8px;
-}
-
-.lab-resources a:hover {
-    background-color: rgb(52, 152, 219);
-}
-
-/* for mobile */
-/* for iPad */
-@media only screen and (max-width: 999px) {
-
-    .lab-week,
-    .lab-resources {
-        margin-bottom: 2%;
-    }
-}
-
-/* for desktop */
-@media only screen and (min-width: 1000px) {
-    .lab-weeks {
-        display: flex;
-    }
-
-    .lab-week,
-    .lab-resources {
-        flex: 1;
-    }
-
-    .lab-week {
-        margin-right: 2%;
-        width: 20%;
-    }
-}
-
-/* LABS END */
-
-
-
-form {
-    display: block;
-    margin-top: 0em;
-
-}
-
-form input {
-    width: 100%;
-    box-shadow: 1px 2px #0086ea;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border-radius: 5px;
-    box-sizing: border-box;
-    font-size: 16px;
-}
-
-select {
-    width: 100%;
-    box-shadow: 1px 2px #0086ea;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border-radius: 5px;
-    box-sizing: border-box;
-    font-size: 16px;
-    text-align-last: center;
-    padding-right: 29px;
-    direction: rtl;
-}
-
-.student_marks {
-    width: 100%;
-    border: 1px solid black;
-    box-shadow: 1px 2px #0086ea;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border-radius: 5px;
-    box-sizing: border-box;
-    font-size: 16px;
-    text-align-last: center;
-    padding-right: 29px;
-    direction: rtl;
-}
-
-form button {
-    width: 100%;
-}
-
-.signup {
-    text-decoration: none;
-}
-
-
-#signup_b {
-    float: right;
-}
-
-button {
-
-    background-color: seagreen;
-    border: solod 1px black;
-    color: white;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 5px;
-    font-size: 2vw;
-    width: auto;
 }

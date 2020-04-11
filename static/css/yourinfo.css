@@ -1,0 +1,27 @@
+.dashboard-row {
+  margin-bottom: 1%;
+}
+.dashboard-col {
+  border: 1px solid black;
+  padding: 1%;
+  width: 100%;
+  background-color: white;
+}
+/* for mobile */
+/* for iPad */
+@media only screen and (max-width: 999px) {
+  .dashboard-col {
+    margin-bottom: 2%;
+  }
+}
+
+/* for desktop */
+@media only screen and (min-width: 1000px) {
+  .dashboard-row {
+    display: flex;
+  }
+  .dashboard-col {
+    flex: 1;
+    margin-right: 2%;
+  }
+}
